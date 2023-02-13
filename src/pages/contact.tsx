@@ -2,23 +2,23 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import { ReactElement } from 'react'
 
-export default function Home() {
+export default function Contact() {
   return (
     <>
 
       <Head>
-        <title>Landing Page</title>
+        <title>Landing Page - Contact</title>
       </Head>
 
       <main>
-        Home Page
+        Contact Page
       </main>
 
     </>
   )
 }
 
-Home.getLayout = function getLayout(page: ReactElement) {
+Contact.getLayout = function getLayout(page: ReactElement) {
 
   return <Layout>{page}</Layout>
 }
