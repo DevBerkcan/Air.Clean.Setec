@@ -1,13 +1,9 @@
 import Head from 'next/head'
 import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
+import AboutSection from '@/components/AboutSection'
+import ServicesSection from '@/components/ServicesSection'
 import Footer from '@/components/Footer'
-import Image from 'next/image'
-import house from '../assets/images/house.svg'
-import kitchen from '../assets/images/kitchen.svg'
-import floor from '../assets/images/floor.svg'
-import office from '../assets/images/office.svg'
-import bathroom from '../assets/images/bathroom.svg'
 
 export default function Index() {
 
@@ -51,99 +47,13 @@ export default function Index() {
           {/* Hero */}
           <HeroSection />
 
-          <section className="px-6 py-20" id="about">
-            <div className="container text-center">
+          {/* About */}
+          <AboutSection />
 
-              <span className="text-sm bg-orange-100 text-orange-400 rounded-full px-3 py-1">About</span>
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Who we are</h2>
+          {/* Services */}
+          <ServicesSection />
 
-              <div className="mx-auto max-w-2xl">
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                  With Reliable, Friendly and Trustful being our company values,
-                  we are present ourselves with the most complete and up to date
-                  cleaning services.
-                </p>
-              </div>
-
-            </div>
-          </section>
-
-          <section className="px-6 py-20" id="services">
-            <div className="container text-center">
-
-              <span className="text-sm bg-orange-100 text-orange-400 rounded-full px-3 py-1">Services</span>
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our best cleaning services</h2>
-
-              <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-
-                <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg hover:shadow-xl p-8 duration-100">
-                  <div className="w-20 h-20 flex justify-center items-center rounded-full bg-green-400">
-                    <Image src={house} width={30} alt="house" />
-                  </div>
-                  <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">HOUSE CLEANING</h3>
-                  <p className="mt-2 text-lg leading-7 text-gray-600">
-                    We clean and care for variety of hard
-                    surface flooring at many places of
-                    business.
-                  </p>
-                </div>
-                <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg hover:shadow-xl p-8 duration-100">
-                  <div className="w-20 h-20 flex justify-center items-center rounded-full bg-blue-400">
-                    <Image src={kitchen} width={30} alt="house" />
-                  </div>
-                  <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">KITCHEN CLEANING</h3>
-                  <p className="mt-2 text-lg leading-8 text-gray-600">
-                    We clean and care for variety of hard
-                    surface flooring at many places of
-                    business.
-                  </p>
-                </div>
-                <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg hover:shadow-xl p-8 duration-100">
-                  <div className="w-20 h-20 flex justify-center items-center rounded-full bg-orange-400">
-                    <Image src={floor} width={30} alt="house" />
-                  </div>
-                  <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">FLOOR CLEANING</h3>
-                  <p className="mt-2 text-lg leading-8 text-gray-600">
-                    We clean and care for variety of hard
-                    surface flooring at many places of
-                    business.
-                  </p>
-                </div>
-                <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg hover:shadow-xl p-8 duration-100">
-                  <div className="w-20 h-20 flex justify-center items-center rounded-full bg-red-400">
-                    <Image src={bathroom} width={30} alt="house" />
-                  </div>
-                  <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">BATHROOM CLEANING</h3>
-                  <p className="mt-2 text-lg leading-8 text-gray-600">
-                    We clean and care for variety of hard
-                    surface flooring at many places of
-                    business.
-                  </p>
-                </div>
-                <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg hover:shadow-xl p-8 duration-100">
-                  <div className="w-20 h-20 flex justify-center items-center rounded-full bg-indigo-400">
-                    <Image src={office} width={30} alt="house" />
-                  </div>
-                  <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">OFFICE CLEANING</h3>
-                  <p className="mt-2 text-lg leading-8 text-gray-600">
-                    We clean and care for variety of hard
-                    surface flooring at many places of
-                    business.
-                  </p>
-                </div>
-                <div className="flex flex-col justify-center items-center bg-black rounded-2xl shadow-lg hover:shadow-xl p-8 duration-100 cursor-pointer">
-
-                  <p className="mt-2 text-xl text-white mx-20">
-                    <span className="text-4xl font-bold mr-2">+12</span>
-                    Services You can Explore
-                  </p>
-                  <span aria-hidden="true" className="text-4xl text-yellow-200">⟶</span>
-                </div>
-
-              </div>
-            </div>
-          </section>
-
+          {/* Hero */}
           <Footer />
 
         </main>

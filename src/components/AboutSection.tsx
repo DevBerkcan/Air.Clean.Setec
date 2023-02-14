@@ -1,0 +1,23 @@
+const AboutSection: any = () => {
+
+  return (
+    <section className="px-6 py-20" id="about">
+      <div className="container text-center">
+
+        <span className="text-sm bg-orange-100 text-orange-400 rounded-full px-3 py-1">About</span>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Who we are</h2>
+
+        <div className="mx-auto max-w-2xl">
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            With Reliable, Friendly and Trustful being our company values,
+            we are present ourselves with the most complete and up to date
+            cleaning services.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  )
+}
+
+export default AboutSection
