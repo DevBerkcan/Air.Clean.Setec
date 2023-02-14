@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Dialog } from '@headlessui/react'
+import logo from '../assets/images/logo.png'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -20,7 +22,7 @@ const Header: any = () => {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
-              <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+              <Image src={logo} className="w-8 mr-3" alt="AK Services" />
             </a>
           </div>
           <div className="flex-grow lg:hidden"></div>
@@ -52,8 +54,8 @@ const Header: any = () => {
         <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+              <span className="sr-only">AK</span>
+              <Image src={logo} className="w-8" alt="AK Services" />
             </a>
             <button
               type="button"

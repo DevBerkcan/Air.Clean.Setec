@@ -1,13 +1,15 @@
+import Image from 'next/image'
+import logo from '../assets/images/logo.png'
+
 const Footer: any = () => {
 
   return (
-    <footer className="p-6 bg-white">
-      <div className="container">
+    <footer className="px-6 bg-white">
+      <div className="container border-t border-gray-200 py-10">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" className="flex items-center">
-              <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="FlowBite Logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap">Ak</span>
+            <a href="#" className="flex items-center">
+              <Image src={logo} className="w-8 mr-3" alt="AK Services" />
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -15,10 +17,10 @@ const Footer: any = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">Flowbite</a>
+                  <a href="#services" className="hover:underline">Services</a>
                 </li>
                 <li>
-                  <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
+                  <a href="#contact" className="hover:underline">Contact</a>
                 </li>
               </ul>
             </div>
@@ -26,10 +28,10 @@ const Footer: any = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
-                  <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
+                  <a href="#" className="hover:underline ">Facebook</a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</a>
+                  <a href="#" className="hover:underline">Twitter</a>
                 </li>
               </ul>
             </div>
@@ -49,7 +51,7 @@ const Footer: any = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center">
-            © 2023 <a href="https://flowbite.com/" className="hover:underline">Ak™</a>. All Rights Reserved.
+            © 2023 <a href="#" className="hover:underline">AK Services™</a>. All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a href="#" className="text-gray-500 hover:text-gray-900">

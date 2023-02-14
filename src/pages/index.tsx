@@ -10,7 +10,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Cleaning Services</title>
+        <title>AK Services</title>
       </Head>
 
       <div className="isolate bg-white">
