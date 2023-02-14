@@ -4,9 +4,9 @@ import { Dialog } from '@headlessui/react'
 
 const navigation = [
   { name: 'Home', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Services', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'About', href: '#about' },
+  { name: 'Services', href: '#services' },
+  { name: 'Contact', href: '#contact' },
 ]
 
 const Header: any = () => {
@@ -42,7 +42,7 @@ const Header: any = () => {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
+              +123 123456789 <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
@@ -79,7 +79,7 @@ const Header: any = () => {
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">
-                  Log in
+                  +123 123456789
                 </a>
               </div>
             </div>
