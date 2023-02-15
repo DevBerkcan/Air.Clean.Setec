@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Dialog } from '@headlessui/react'
 import logo from '../assets/images/logo.png'
 import Image from 'next/image'
+import useScroll from '@/hooks/useScroll'
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -14,15 +15,16 @@ const navigation = [
 const Header: any = () => {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { scroll } = useScroll()
 
   return (
-    <header className="px-6 pt-6 lg:px-8">
+    <header className={"sticky top-0 px-6 py-6 lg:px-8 z-10 duration-100 " + (scroll > 40 ? 'bg-white/95 backdrop-blur-md shadow-xl shadow-black/[5%] py-4' : '')}>
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="container flex items-center">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
-              <Image src={logo} className="w-8 mr-3" alt="AK Services" />
+              <Image src={logo} className={"mr-3 duration-100 " + (scroll > 40 ? 'w-6' : 'w-8')} alt="AK Services" />
             </a>
           </div>
           <div className="flex-grow lg:hidden"></div>
@@ -51,11 +53,11 @@ const Header: any = () => {
       </nav>
 
       <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
+        <Dialog.Panel className={"fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden " + (scroll > 40 ? 'py-4' : '')}>
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
-              <Image src={logo} className="w-8" alt="AK Services" />
+              <Image src={logo} className={"duration-100 " + (scroll > 40 ? 'w-6' : 'w-8')} alt="AK Services" />
             </a>
             <button
               type="button"
@@ -72,6 +74,7 @@ const Header: any = () => {
                   <a
                     key={item.name}
                     href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">
                     {item.name}
                   </a>

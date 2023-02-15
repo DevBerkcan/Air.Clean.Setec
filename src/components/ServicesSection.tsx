@@ -9,7 +9,7 @@ const ServicesSection: any = () => {
 
   return (
     <section className="px-6 py-20" id="services">
-      <div className="container text-center">
+      <div className="container text-center py-8 lg:py-16">
 
         <span className="text-sm bg-orange-100 text-orange-400 rounded-full px-3 py-1">Services</span>
         <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our best cleaning services</h2>
