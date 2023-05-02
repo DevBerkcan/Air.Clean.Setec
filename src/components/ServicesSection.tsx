@@ -71,14 +71,6 @@ const ServicesSection: any = () => {
               business.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center bg-black rounded-2xl shadow-lg hover:shadow-xl p-8 duration-100 cursor-pointer">
-
-            <p className="mt-2 text-xl text-white mx-20">
-              <span className="text-4xl font-bold mr-2">+12</span>
-              Services You can Explore
-            </p>
-            <span aria-hidden="true" className="text-4xl text-yellow-200">⟶</span>
-          </div>
 
         </div>
       </div>

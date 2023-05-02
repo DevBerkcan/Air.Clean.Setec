@@ -1,3 +1,6 @@
+import Image from "next/image"
+import clean from '../assets/images/clean.jpeg'
+
 const AboutSection: any = () => {
 
   return (
@@ -14,6 +17,8 @@ const AboutSection: any = () => {
             cleaning services.
           </p>
         </div>
+
+        <Image src={clean} alt="Gloves" width={400} className="mx-auto mt-6" />
 
       </div>
     </section>
