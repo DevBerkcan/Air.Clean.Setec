@@ -3,7 +3,7 @@ import Header from "./Header"
 const HeroSection: any = () => {
 
   return (
-    <section className="relative px-6 lg:px-8 pt-20 bg-[url('/hero-background.jpg')] bg-fixed bg-cover">
+    <section className="relative px-6 lg:px-8 pt-20 bg-[url('/hero-background.jpg')] bg-fixed bg-cover" id="home">
 
       <div className="bg-black bg-opacity-60 absolute top-0 left-0 w-full h-full z-10"></div>
 

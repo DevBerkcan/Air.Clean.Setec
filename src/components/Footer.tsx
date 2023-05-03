@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logo from '../assets/images/logo.png'
+import Link from 'next/link'
 
 const Footer: any = () => {
 
@@ -29,7 +30,7 @@ const Footer: any = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline ">Facebook</a>
+                  <a href="#" className="hover:underline">Facebook</a>
                 </li>
                 <li>
                   <a href="#" className="hover:underline">Twitter</a>
@@ -40,7 +41,7 @@ const Footer: any = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">Privacy Policy</a>
+                  <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
                 </li>
                 <li>
                   <a href="#" className="hover:underline">Terms &amp; Conditions</a>
