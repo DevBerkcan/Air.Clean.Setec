@@ -1,5 +1,5 @@
 import Image from "next/image"
-import clean from '../assets/images/clean.jpeg'
+import clean from '../assets/images/clean.jpg'
 
 const AboutSection: any = () => {
 
@@ -18,7 +18,7 @@ const AboutSection: any = () => {
           </p>
         </div>
 
-        <Image src={clean} alt="Gloves" width={400} className="mx-auto mt-6" />
+        <Image src={clean} alt="Gloves" width={500} className="mx-auto rounded-lg mt-6" />
 
       </div>
     </section>
