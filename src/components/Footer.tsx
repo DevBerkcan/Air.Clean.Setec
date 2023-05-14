@@ -10,12 +10,12 @@ const Footer: any = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
-              <Image src={logo} className="w-8 mr-3" alt="AK Services" />
+              <Image src={logo} className="w-8 mr-3" alt="AK Gebäudereinigung" />
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Links</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
                   <a href="#services" className="hover:underline">Services</a>
@@ -37,13 +37,13 @@ const Footer: any = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Rechtliches</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">Privacy Policy</a>
+                  <a href="#" className="hover:underline">Impressum</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                  <a href="#" className="hover:underline">AGB &amp; Datenschutzerklärung</a>
                 </li>
               </ul>
             </div>
@@ -54,7 +54,7 @@ const Footer: any = () => {
 
         <div className="text-center sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center">
-            © 2023 <a href="#" className="hover:underline">AK Services™</a>. All Rights Reserved.
+            © 2023 <a href="#" className="hover:underline">AK Gebäudereinigung™</a>. All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-6 justify-center sm:mt-0">
             <a href="#" className="text-gray-500 hover:text-gray-900">

@@ -8,9 +8,9 @@ import useScroll from '@/hooks/useScroll'
 
 const navigation = [
   { name: 'Home', href: '#' },
-  { name: 'About', href: '#about' },
-  { name: 'Services', href: '#services' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Über uns', href: '#about' },
+  { name: 'Leistungen', href: '#services' },
+  { name: 'Kontakt', href: '#contact' },
 ]
 
 const Header: any = () => {
@@ -34,7 +34,7 @@ const Header: any = () => {
               type="button"
               className={"-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 " + (scroll > 40 ? 'text-gray-700' : 'text-white')}
               onClick={() => setMobileMenuOpen(true)}>
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">Öffne Menü</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
@@ -47,7 +47,7 @@ const Header: any = () => {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className={"text-sm font-semibold leading-6 " + (scroll > 40 ? 'text-gray-900' : 'text-white')}>
-              +123 123456789 <span aria-hidden="true">&rarr;</span>
+            +49 1577 4777988 <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
@@ -57,8 +57,8 @@ const Header: any = () => {
         <Dialog.Panel className={"fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden " + (scroll > 40 ? 'py-4' : '')}>
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">AK</span>
-              <Image src={logo} className={"duration-100 " + (scroll > 40 ? 'w-6' : 'w-8')} alt="AK Services" />
+              <span className="sr-only">AK-Gebäudereinigung</span>
+              <Image src={logo} className={"duration-100 " + (scroll > 40 ? 'w-6' : 'w-8')} alt="AK Gebäudereinigung" />
             </a>
             <button
               type="button"
