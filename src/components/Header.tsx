@@ -5,34 +5,36 @@ import logo from '../assets/images/logo.png'
 import logoWhite from '../assets/images/logo-white.png'
 import Image from 'next/image'
 import useScroll from '@/hooks/useScroll'
+import Link from 'next/link'
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Über uns', href: '#about' },
-  { name: 'Leistungen', href: '#services' },
-  { name: 'Kontakt', href: '#contact' },
+  { name: 'Home', href: '/#home' },
+  { name: 'Über uns', href: '/#about' },
+  { name: 'Leistungen', href: '/#services' },
+  { name: 'Kontakt', href: '/#contact' },
+  { name: 'Impressum', href: '/privacy-policy' },
 ]
 
-const Header: any = () => {
+const Header: any = ({ scrollEffect }: any) => {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { scroll } = useScroll()
 
   return (
-    <header className={"fixed w-full left-0 top-0 px-6 py-6 lg:px-8 z-30 duration-100 " + (scroll > 40 ? 'bg-white/95 backdrop-blur-md shadow-xl shadow-black/[5%] py-4' : '')}>
+    <header className={"fixed w-full left-0 top-0 px-6 py-6 lg:px-8 z-30 duration-100 " + (scrollEffect || scroll > 40 ? 'bg-white/95 backdrop-blur-md shadow-xl shadow-black/[5%] py-4' : '')}>
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="container flex items-center">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
-              <Image src={scroll > 40 ? logo : logoWhite} className={"mr-3 duration-100 " + (scroll > 40 ? 'w-6' : 'w-8')} alt="AK Services" />
+              <Image src={scrollEffect || scroll > 40 ? logo : logoWhite} className={"mr-3 duration-100 " + (scrollEffect || scroll > 40 ? 'w-6' : 'w-8')} alt="AK Services" />
             </a>
           </div>
           <div className="flex-grow lg:hidden"></div>
           <div className="flex lg:hidden">
             <button
               type="button"
-              className={"-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 " + (scroll > 40 ? 'text-gray-700' : 'text-white')}
+              className={"-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 " + (scrollEffect || scroll > 40 ? 'text-gray-700' : 'text-white')}
               onClick={() => setMobileMenuOpen(true)}>
               <span className="sr-only">Öffne Menü</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -40,25 +42,25 @@ const Header: any = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className={"text-sm font-semibold leading-6 " + (scroll > 40 ? 'text-gray-900' : 'text-white')}>
+              <Link key={item.name} href={item.href} className={"text-sm font-semibold leading-6 " + (scrollEffect || scroll > 40 ? 'text-gray-900' : 'text-white')}>
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className={"text-sm font-semibold leading-6 " + (scroll > 40 ? 'text-gray-900' : 'text-white')}>
-            +49 1577 4777988 <span aria-hidden="true">&rarr;</span>
+            <a href="#" className={"text-sm font-semibold leading-6 " + (scrollEffect || scroll > 40 ? 'text-gray-900' : 'text-white')}>
+              +49 1577 4777988 <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
       </nav>
 
       <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <Dialog.Panel className={"fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden " + (scroll > 40 ? 'py-4' : '')}>
+        <Dialog.Panel className={"fixed inset-0 z-30 overflow-y-auto bg-white px-6 py-6 lg:hidden " + (scrollEffect || scroll > 40 ? 'py-4' : '')}>
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">AK-Gebäudereinigung</span>
-              <Image src={logo} className={"duration-100 " + (scroll > 40 ? 'w-6' : 'w-8')} alt="AK Gebäudereinigung" />
+              <span className="sr-only">AK</span>
+              <Image src={logo} className={"duration-100 " + (scrollEffect || scroll > 40 ? 'w-6' : 'w-8')} alt="AK Gebäudereinigung" />
             </a>
             <button
               type="button"
@@ -72,13 +74,13 @@ const Header: any = () => {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
                     className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div className="py-6">
