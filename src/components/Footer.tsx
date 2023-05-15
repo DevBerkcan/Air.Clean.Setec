@@ -19,15 +19,15 @@ const Footer: any = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Links</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
-                  <a href="#services" className="hover:underline">Services</a>
+                  <a href="#services" className="hover:underline">Leistungen</a>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:underline">Contact</a>
+                  <a href="#contact" className="hover:underline">Kontakt</a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Folge uns auf</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">Instagram</a>
