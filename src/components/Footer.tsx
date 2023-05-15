@@ -11,12 +11,12 @@ const Footer: any = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
-              <Image src={logo} className="w-8 mr-3" alt="AK Services" />
+              <Image src={logo} className="w-8 mr-3" alt="AK Gebäudereinigung" />
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Links</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
                   <a href="#services" className="hover:underline">Services</a>
@@ -35,13 +35,13 @@ const Footer: any = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Rechtliches</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
-                  <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
+                  <Link href="/privacy-policy" className="hover:underline">Impressum</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                  <a href="#" className="hover:underline">AGB &amp; Datenschutzerklärung</a>
                 </li>
               </ul>
             </div>
@@ -52,7 +52,7 @@ const Footer: any = () => {
 
         <div className="grid gap-y-2 grid-cols-1 md:grid-cols-3">
           <span className="text-sm text-gray-500 text-center md:text-start">
-            © 2023 <a href="#" className="hover:underline">AK Services™</a>. All Rights Reserved.
+            © 2023 <a href="#" className="hover:underline">AK Gebäudereinigung™</a>. All Rights Reserved.
           </span>
           <span className="text-sm text-gray-500 text-center">
             Designed by <a href="https://gentle-webdesign.de/"
