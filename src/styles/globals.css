@@ -9,8 +9,8 @@ body,
 }
 
 html {
-    --scroll-behavior: smooth!important;
-    scroll-behavior: smooth!important;
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
 }
 
 * {
@@ -23,4 +23,43 @@ html {
 
 .container {
     @apply max-w-7xl mx-auto;
+}
+
+.reveal {
+
+    position: relative;
+    transition: 1s all ease;
+    opacity: 0;
+
+    &.active {
+        opacity: 1;
+    }
+
+    &.reveal-top {
+        transform: translateY(100px);
+        &.active {
+            transform: translateY(0);
+        }
+    }
+
+    &.reveal-bottom {
+        transform: translateY(-100px);
+        &.active {
+            transform: translateY(0);
+        }
+    }
+
+    &.reveal-left {
+        transform: translateX(100px);    
+        &.active {
+            transform: translateX(0);
+        }
+    }
+
+    &.reveal-right {
+        transform: translateX(-100px);    
+        &.active {
+            transform: translateX(0);
+        }
+    }
 }

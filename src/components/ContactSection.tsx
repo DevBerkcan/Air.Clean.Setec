@@ -17,9 +17,9 @@ const ContactSection: any = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 place-items-center">
 
-            <Image src={gloves} alt="Gloves" width={400} className="hidden md:block rounded-lg" />
+            <Image src={gloves} alt="Gloves" width={400} className="hidden md:block rounded-lg reveal reveal-right" />
 
-            <form className="space-y-8 col-span-2" action="https://getform.io/f/ade46548-134f-4cd4-8b43-31a274cd5cd1" method="POST">
+            <form className="space-y-8 col-span-2 reveal reveal-left" action="https://getform.io/f/ade46548-134f-4cd4-8b43-31a274cd5cd1" method="POST">
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="Unternehmen" className="block mb-2 text-sm font-medium text-gray-900">Unternehmen</label>
