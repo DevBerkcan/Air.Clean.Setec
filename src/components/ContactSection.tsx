@@ -1,25 +1,27 @@
 import Image from "next/image"
-import gloves from '../assets/images/gloves.jpg'
+import enterprise from '../assets/images/enterprise.jpg'
 
 const ContactSection: any = () => {
 
   return (
-    <section className="px-6 py-20" id="contact">
-      <div className="container">
+    <section id="contact">
+      <div className="mx-auto">
 
-        <div className="py-8 lg:py-16 mx-auto">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">
-            Kontaktiere Sie uns
-          </h2>
-          <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
-          Nehmen Sie gerne Kontakt zu uns auf. Schreiben Sie uns Ihr anliegen und wir werden uns so schnell wie möglich darum kümmern Ihnen eine Antwort zu geben.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 place-items-center items-stretch">
 
-          <div className="grid grid-cols-1 md:grid-cols-3 place-items-center">
+          <Image src={enterprise} alt="Enterprise" className="hidden md:block w-full h-[900px] object-cover" />
+          
+          <div className="p-6 md:p-20 flex flex-col justify-center shadow-inner">
+            
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">
+              Kontaktiere Sie uns
+            </h2>
+            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
+              Nehmen Sie gerne Kontakt zu uns auf. Schreiben Sie uns Ihr anliegen und wir werden uns so schnell wie möglich darum kümmern Ihnen eine Antwort zu geben.
+            </p>
 
-            <Image src={gloves} alt="Gloves" width={400} className="hidden md:block rounded-lg reveal reveal-right" />
-
-            <form className="space-y-8 col-span-2 reveal reveal-left" action="https://getform.io/f/ade46548-134f-4cd4-8b43-31a274cd5cd1" method="POST">
+            <form className="space-y-4" action="https://getform.io/f/ade46548-134f-4cd4-8b43-31a274cd5cd1" method="POST">
+              
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="Unternehmen" className="block mb-2 text-sm font-medium text-gray-900">Unternehmen</label>
@@ -102,13 +104,11 @@ const ContactSection: any = () => {
               <button
                 type="submit"
                 className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-indigo-700 sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300">
-               Senden
+                Senden
               </button>
 
             </form>
-
           </div>
-
 
         </div>
 
