@@ -57,7 +57,7 @@ const ServicesSection: any = () => {
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
           {services.map((item, index) => (
-            <div key={index} className="flex flex-col items-center bg-white rounded-2xl shadow-lg hover:shadow-xl p-8 duration-100 reveal reveal-top">
+            <div key={index} className="flex flex-col items-center bg-white rounded-2xl shadow-lg hover:shadow-xl p-8 duration-100">
               <div className={`w-20 h-20 flex justify-center items-center rounded-full bg-${item.color}-400`}>
                 <Image src={item.icon} width={30} alt={item.title} />
               </div>

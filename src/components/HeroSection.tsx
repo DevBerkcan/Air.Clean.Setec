@@ -11,10 +11,10 @@ const HeroSection: any = () => {
 
       <div className="relative mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 z-20">
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl reveal reveal-bottom">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
           Professionelle Reinigungsdienste für Ihr Zuhause
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-200 reveal reveal-bottom">
+          <p className="mt-6 text-lg leading-8 text-gray-200">
           Zuverlässig, freundlich und vertrauensvoll sind unsere Unternehmenswerte,
             präsentieren wir uns mit den umfassendsten und modernsten
             Reinigungsdienstleistungen.
@@ -22,10 +22,10 @@ const HeroSection: any = () => {
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#services"
-              className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 reveal reveal-right">
+              className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
               Unsere Leistungen
             </a>
-            <a href="#about" className="text-base font-semibold leading-7 text-white reveal reveal-left">
+            <a href="#about" className="text-base font-semibold leading-7 text-white">
               Erfahre mehr über uns <span aria-hidden="true">→</span>
             </a>
           </div>
