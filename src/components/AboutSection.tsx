@@ -9,7 +9,12 @@ const AboutSection: any = () => {
 
         <div className="mx-auto max-w-2xl">
           <p className="mt-6 text-lg leading-8 text-gray-600">
-         Reinigung genau so, wie du es dir wünscht. Ob Praxis oder Bürogebäude, unser professionelles Team reinigt jedes Objekt streifenfrei.
+            Reinigung genau so, wie du es dir wünscht. Ob Praxis oder Bürogebäude, unser professionelles Team reinigt jedes Objekt streifenfrei.
+            <br /><br />
+            Ein wichtiger, aber spontaner Termin steht an und Konferenzräume sind nicht hergerichtet? Nach einer vollen Praxis bedarf es einer intensiven spezial Reinigung? Für AK alles kein Problem.
+            Unser flexibles Team erfüllt jeden deiner Wünsche, egal zu welcher Uhrzeit, Spontanität ist unsere Spezialität.
+            <br /><br />
+            Bei uns gilt: Fairness, Flexibilität, Gründlichkeit, Sauberkeit und ein hohes Maß an Servicequalität durch kurze Kommunikationswege.
           </p>
         </div>
 
