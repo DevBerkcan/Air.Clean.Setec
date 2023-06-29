@@ -41,7 +41,7 @@ const Footer: any = () => {
                   <Link href="/privacy-policy" className="hover:underline">Impressum</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">AGB &amp; Datenschutzerklärung</a>
+                  <Link href="/data-protection" className="hover:underline">Datenschutzerklärung</Link>
                 </li>
               </ul>
             </div>
