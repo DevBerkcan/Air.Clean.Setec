@@ -12,7 +12,6 @@ const navigation = [
   { name: 'Über uns', href: '/#about' },
   { name: 'Leistungen', href: '/#services' },
   { name: 'Kontakt', href: '/#contact' },
-  { name: 'Impressum', href: '/privacy-policy' },
 ]
 
 const Header: any = ({ scrollEffect }: any) => {
