@@ -3,7 +3,7 @@ import Header from "./Header"
 const HeroSection: any = () => {
 
   return (
-    <section className="relative px-6 lg:px-8 pt-20 bg-[url('/hero-background.jpg')] bg-fixed bg-cover bg-center" id="home">
+    <section className="relative px-6 lg:px-8 pt-20 bg-[url('/hero-background.jpg')] bg-fixed bg-center" id="home">
 
       <div className="bg-black bg-opacity-60 absolute top-0 left-0 w-full h-full z-10"></div>
 
@@ -12,10 +12,10 @@ const HeroSection: any = () => {
       <div className="relative mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 z-20">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-          Professionelle Reinigungsdienste für Ihr Gebäuderäume
+            Professionelle Reinigungsdienste für Ihr Gebäuderäume
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-200">
-          Zuverlässig, freundlich und vertrauensvoll sind unsere Unternehmenswerte,
+            Zuverlässig, freundlich und vertrauensvoll sind unsere Unternehmenswerte,
             präsentieren wir uns mit den umfassendsten und modernsten
             Reinigungsdienstleistungen.
           </p>
