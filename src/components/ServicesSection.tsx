@@ -3,7 +3,7 @@ import house from '../assets/images/house.svg'
 import kitchen from '../assets/images/kitchen.svg'
 import floor from '../assets/images/floor.svg'
 import office from '../assets/images/office.svg'
-import bathroom from '../assets/images/bathroom.svg'
+import window from '../assets/images/window.svg'
 
 const services = [
   {
@@ -27,7 +27,7 @@ const services = [
   {
     title: 'Fensterreinigung',
     description: "Die Fensterreinigung beinhaltet die Reinigung von Fenstern und Glasflächen innen und außen. Hierbei werden Schmutz, Staub und Fingerabdrücke entfernt, um eine klare Sicht zu gewährleisten.",
-    icon: bathroom,
+    icon: window,
     color: 'red'
   },
   {

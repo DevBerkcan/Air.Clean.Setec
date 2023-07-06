@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>AK Services - Privacy Policy</title>
+        <title>AK Services - Impressum</title>
       </Head>
 
       <main>
