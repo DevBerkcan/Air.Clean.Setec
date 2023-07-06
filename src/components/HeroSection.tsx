@@ -12,7 +12,7 @@ const HeroSection: any = () => {
       <div className="relative mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 z-20">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Professionelle Reinigungsdienste für Ihr Gebäuderäume
+            Professionelle Reinigungsdienste für Ihre Gebäuderäume
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-200">
             Zuverlässig, freundlich und vertrauensvoll sind unsere Unternehmenswerte,
