@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="relative mx-auto max-w-[37.5rem] pt-20 text-center pb-24">
               <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Impressum</h1>
-              <p className="mt-4 text-base leading-7 text-slate-600">Last updated on June 29, 2023</p>
+              <p className="mt-4 text-base leading-7 text-slate-600">Zuletzt aktualisiert am 29. Juni 2023</p>
             </div>
           </div>
 

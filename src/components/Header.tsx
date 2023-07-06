@@ -24,10 +24,10 @@ const Header: any = ({ scrollEffect }: any) => {
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="container flex items-center">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="/#home" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
               <Image src={scrollEffect || scroll > 40 ? logo : logoWhite} className={"mr-3 duration-100 " + (scrollEffect || scroll > 40 ? 'w-6' : 'w-8')} alt="AK Services" />
-            </a>
+            </Link>
           </div>
           <div className="flex-grow lg:hidden"></div>
           <div className="flex lg:hidden">
