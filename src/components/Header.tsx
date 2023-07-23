@@ -26,7 +26,7 @@ const Header: any = ({ scrollEffect }: any) => {
           <div className="flex lg:flex-1">
             <Link href="/#home" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
-              <Image src={scrollEffect || scroll > 40 ? logo : logoWhite} className={"mr-3 duration-100 " + (scrollEffect || scroll > 40 ? 'w-6' : 'w-8')} alt="AK Services" />
+              <Image src={scrollEffect || scroll > 40 ? logo : logoWhite} className={"mr-3 duration-100 " + (scrollEffect || scroll > 40 ? 'w-[120px]' : 'w-[140px]')} alt="Air Clean" />
             </Link>
           </div>
           <div className="flex-grow lg:hidden"></div>
@@ -64,7 +64,7 @@ const Header: any = ({ scrollEffect }: any) => {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
-              <Image src={logo} className={"duration-100 " + (scrollEffect || scroll > 40 ? 'w-6' : 'w-8')} alt="AK Gebäudereinigung" />
+              <Image src={logo} className={"duration-100 w-[120px]"} alt="Air Clean" />
             </a>
             <button
               type="button"

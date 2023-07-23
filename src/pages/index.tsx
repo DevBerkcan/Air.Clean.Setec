@@ -28,7 +28,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>AK Services</title>
+        <title>Air Clean</title>
       </Head>
 
       <main>

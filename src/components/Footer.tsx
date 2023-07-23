@@ -11,7 +11,7 @@ const Footer: any = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
-              <Image src={logo} className="w-8 mr-3" alt="AK Gebäudereinigung" />
+              <Image src={logo} className="w-[120px] mr-3" alt="Air Clean" />
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -52,7 +52,7 @@ const Footer: any = () => {
 
         <div className="grid gap-y-2 grid-cols-1 md:grid-cols-3">
           <span className="text-sm text-gray-500 text-center md:text-start">
-            © 2023 <a href="#" className="hover:underline">AK Gebäudereinigung™</a>. All Rights Reserved.
+            © 2023 <a href="#" className="hover:underline">Air Clean™</a>. All Rights Reserved.
           </span>
           <span className="text-sm text-gray-500 text-center">
             Designed by <a href="https://gentle-webdesign.de/"

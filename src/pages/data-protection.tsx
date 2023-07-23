@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>AK Services - Datenschutzerklärung</title>
+        <title>Air Clean - Datenschutzerklärung</title>
       </Head>
 
       <main>
@@ -77,7 +77,7 @@ export default function PrivacyPolicy() {
               <p className="my-4">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
               <p className="my-4">
                 Aylin Gözdas<br />
-                AK Gebäudereinigung<br />
+                Air Clean<br />
                 Buschstraße 46<br />
                 44866 Bochum<br />
               </p>

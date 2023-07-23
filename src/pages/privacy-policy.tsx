@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>AK Services - Impressum</title>
+        <title>Air Clean - Impressum</title>
       </Head>
 
       <main>
@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
 
               <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Angaben gemäß § 5 TMG:</h2>
 
-              <p className="my-2">AK Gebäudereinigung</p>
+              <p className="my-2">Air Clean</p>
               <p className="my-2">Buschstraße 46</p>
               <p className="my-2">44866 Bochum</p>
               <p className="my-2">Mobil: +49 1577 4777988</p>

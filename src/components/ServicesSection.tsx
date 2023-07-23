@@ -7,38 +7,38 @@ import window from '../assets/images/window.svg'
 
 const services = [
   {
-    title: 'Unterhaltsreinigung',
-    description: "Die Unterhaltsreinigung ist eine regelmäßige Reinigung, die dazu dient, Räumlichkeiten in einem guten und gepflegten Zustand zu halten. Dazu gehört zum Beispiel das Reinigen von Böden, Oberflächen und sanitären Anlagen.",
+    title: 'Service 1',
+    description: "Service 1 Description",
     icon: house,
     color: 'green'
   },
   {
-    title: 'Grundreinigung',
-    description: "Die Grundreinigung ist eine intensive Reinigung, die in größeren Abständen durchgeführt wird. Dabei werden Verschmutzungen beseitigt, die bei der Unterhaltsreinigung nicht entfernt werden können. Hierzu zählen zum Beispiel hartnäckige Flecken, Kalkablagerungen oder Fettflecken.",
+    title: 'Service 2',
+    description: "Service 2 Description",
     icon: kitchen,
     color: 'blue'
   },
   {
-    title: 'Bauendreinigung',
-    description: "Die Bauendreinigung ist eine Reinigung, die nach Fertigstellung eines Bauvorhabens durchgeführt wird. Dabei werden Baustaub, Bauschutt und weitere Verschmutzungen beseitigt und die Räumlichkeiten auf den Einzug vorbereitet.",
+    title: 'Service 3',
+    description: "Service 3 Description",
     icon: floor,
     color: 'orange'
   },
   {
-    title: 'Fensterreinigung',
-    description: "Die Fensterreinigung beinhaltet die Reinigung von Fenstern und Glasflächen innen und außen. Hierbei werden Schmutz, Staub und Fingerabdrücke entfernt, um eine klare Sicht zu gewährleisten.",
+    title: 'Service 4',
+    description: "Service 4 Description",
     icon: window,
     color: 'red'
   },
   {
-    title: 'Desinfektionsreinigung',
-    description: "Die Desinfektionsreinigung ist eine Reinigung, die speziell dazu dient, Keime, Bakterien und Viren abzutöten. Diese Art der Reinigung wird in sensiblen Bereichen, wie Praxen, Kindergärten, Altersheimen oder Lebensmittelbetrieben durchgeführt.",
+    title: 'Service 5',
+    description: "Service 5 Description",
     icon: office,
     color: 'indigo'
   },
   {
-    title: 'Sonderreinigung',
-    description: "Die Sonderreinigung bezieht sich auf Reinigungsarbeiten, die nicht unter die oben genannten Kategorien fallen. Beispiele für Sonderreinigungen können sein: Teppichreinigung, Fassadenreinigung oder Reinigung von Maschinen und Anlagen.",
+    title: 'Service 6',
+    description: "Service 6 Description",
     icon: office,
     color: 'gray'
   },
@@ -51,8 +51,8 @@ const ServicesSection: any = () => {
     <section className="px-6 py-20" id="services">
       <div className="container text-center py-8 lg:py-16">
 
-        <span className="text-sm font-semibold bg-orange-100 text-orange-400 rounded-full px-3 py-1">Leistungen</span>
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Unsere besten Reinigungsdienstleistungen</h2>
+        <span className="text-sm font-semibold bg-orange-100 text-orange-400 rounded-full px-3 py-1">Services</span>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Checkout our services</h2>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
