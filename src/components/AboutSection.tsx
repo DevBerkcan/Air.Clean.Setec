@@ -9,7 +9,10 @@ const AboutSection: any = () => {
 
         <div className="mx-auto max-w-2xl">
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            At Air Clean, we are dedicated to creating a breath of fresh air for you and your environment. Our mission is to provide innovative and effective air cleaning solutions that promote healthier living and a sustainable future. With a deep understanding of the importance of clean air, we have developed cutting-edge technology and products to tackle indoor and outdoor air pollution.
+            Sauberkeit und Effizienz stehen bei uns an erster Stelle! Aircleanvs bietet erstklassige
+            Reinigungsdienstleistungen für raumlufttechnische Anlagen in Industrie und GastronomieKüchen. Vertrauen Sie unserem erfahrenen Team, um die Luftqualität zu verbessern und Ihre
+            Anlagen in Topform zu halten. Kontaktieren Sie uns jetzt für eine professionelle Beratung.
+            Wir freuen uns darauf, Ihnen zu helfen!"
           </p>
         </div>
 

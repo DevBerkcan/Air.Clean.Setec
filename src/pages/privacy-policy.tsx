@@ -29,12 +29,12 @@ export default function PrivacyPolicy() {
 
               <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Angaben gemäß § 5 TMG:</h2>
 
-              <p className="my-2">Air Clean</p>
-              <p className="my-2">Buschstraße 46</p>
-              <p className="my-2">44866 Bochum</p>
-              <p className="my-2">Mobil: +49 1577 4777988</p>
-              <p className="my-2">E-Mail: a.goezdas@akdienstleistungen.de</p>
-              <p className="my-2">Steuer-Nr.: 691/8072/4579</p>
+              <p className="my-2">AirClean VS</p>
+              <p className="my-2">Am Martinszehnten 3</p>
+              <p className="my-2">60437 Frankfurt am Main</p>
+              <p className="my-2">Mobil: 069 - 34 86 88 61</p>
+              <p className="my-2">E-Mail: info@airclean-vs.de</p>
+              <p className="my-2">Steuer-Nr.: 013/8695/1538</p>
               <p className="my-2">Inhaltlich Verantwortlicher: Aylin Gözdas (Kontaktdaten siehe oben)</p>
 
               <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Haftungsausschluss (Disclaimer) Haftung für Inhalte</h2>

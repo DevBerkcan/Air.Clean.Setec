@@ -82,7 +82,7 @@ export default function PrivacyPolicy() {
                 44866 Bochum<br />
               </p>
               <p className="my-4">
-                Telefon: +49 1577 4777988<br />
+                Telefon: 069 - 34 86 88 61<br />
                 E-Mail: a.goezdas@akdienstleistungen.de<br />
               </p>
               <p className="my-4">Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
