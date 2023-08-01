@@ -8,7 +8,7 @@ import useScroll from '@/hooks/useScroll'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'Angebot einholen', href: '/#home' },
+  { name: 'Angebot einholen', href: '/send-offer' },
   { name: 'Home', href: '/#home' },
   { name: 'Über uns', href: '/#about' },
   { name: 'Leistungen', href: '/#services' },

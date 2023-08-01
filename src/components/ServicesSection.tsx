@@ -1,74 +1,48 @@
 import Image from 'next/image'
-import house from '../assets/images/house.svg'
-import kitchen from '../assets/images/kitchen.svg'
-import floor from '../assets/images/floor.svg'
-import office from '../assets/images/office.svg'
-import window from '../assets/images/window.svg'
-
-const services = [
-  {
-    title: 'Service 1',
-    description: "Service 1 Description",
-    icon: house,
-    color: 'green'
-  },
-  {
-    title: 'Service 2',
-    description: "Service 2 Description",
-    icon: kitchen,
-    color: 'blue'
-  },
-  {
-    title: 'Service 3',
-    description: "Service 3 Description",
-    icon: floor,
-    color: 'orange'
-  },
-  {
-    title: 'Service 4',
-    description: "Service 4 Description",
-    icon: window,
-    color: 'red'
-  },
-  {
-    title: 'Service 5',
-    description: "Service 5 Description",
-    icon: office,
-    color: 'indigo'
-  },
-  {
-    title: 'Service 6',
-    description: "Service 6 Description",
-    icon: office,
-    color: 'gray'
-  },
-
-]
+import kitchenExhaust from '@/assets/images/kitchen-exhaust-2.svg'
 
 const ServicesSection: any = () => {
 
   return (
-    <section className="px-6 py-20" id="services">
+    <section className="px-6 py-20 pb-0" id="services">
       <div className="container text-center py-8 lg:py-16">
 
         <span className="text-sm font-semibold bg-orange-100 text-orange-400 rounded-full px-3 py-1">Services</span>
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">Checkout our services</h2>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <Image className="mx-auto my-4" src={kitchenExhaust} width={180} alt={"Kitchen Exhaust"} />
 
-          {services.map((item, index) => (
-            <div key={index} className="flex flex-col items-center bg-white rounded-2xl shadow-lg hover:shadow-xl p-8 duration-100">
-              <div className={`w-20 h-20 flex justify-center items-center rounded-full bg-${item.color}-400`}>
-                <Image src={item.icon} width={30} alt={item.title} />
-              </div>
-              <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">{item.title}</h3>
-              <p className="mt-2 text-md leading-[28px] text-gray-600">
-                {item.description}
-              </p>
-            </div>
-          ))}
+        <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">REINIGUNG KÜCHENABLUFTANLAGE</h3>
+        <p className="mt-2 text-md leading-[28px] text-gray-600">
+          Unregelmäßig gereinigte Küchenabluftanlagen können nicht nur zu einer schlechten
+          Luftzirkulation in Küchen und gastronomischen Einrichtungen führen, sondern auch ein
+          erhöhtes Sicherheitsrisiko darstellen. Fett und Schmutz, die sich an den Innenseiten der
+          Lüftungsanlagen ansammeln, setzen Ihr Unternehmen einem erhöhten Feuerrisiko aus.
+        </p>
+        <p className="mt-2 text-md leading-[28px] text-gray-600">
+          Bei Airclean-VS setzen wir uns für eine effiziente, brandschutztechnisch zertifizierte und
+          hygienische Reinigung von Lüftungsanlagen in der Gastronomie nach VDI 2052 ein. Unsere
+          Expertise konzentriert sich dabei besonders auf die Küchenabluftanlagen in gastronomischen
+          und lebensmittelverarbeitenden Betrieben, die den Kern unseres Leistungsportfolios bilden.
+        </p>
+        <p className="mt-2 text-md leading-[28px] text-gray-600">
+          Durch unsere professionelle Reinigung tragen wir dazu bei, dass Ihre Lüftungsanlagen
+          optimal funktionieren und die Luftqualität in Ihren Küchen verbessert wird. Unsere
+          zertifizierten Techniker sorgen nicht nur für eine gründliche Entfernung von Fett und
+          Schmutz, sondern beachten auch strengste Brandschutzstandards und hygienische
+          Richtlinien.
+        </p>
+        <p className="mt-2 text-md leading-[28px] text-gray-600">
+          Sie können sich darauf verlassen, dass wir Ihre Anlagen sorgfältig inspizieren und fachgerecht
+          reinigen, um die Sicherheit und Effizienz Ihrer Lüftungsanlagen zu gewährleisten. Mit
+          unserem ganzheitlichen Ansatz bieten wir Ihnen maßgeschneiderte Lösungen, die Ihren
+          spezifischen Anforderungen gerecht werden.
+        </p>
+        <p className="mt-2 text-md leading-[28px] text-gray-600">
+          Vertrauen Sie auf Airclean-VS, um Ihre Küchenabluftanlagen in erstklassigem Zustand zu
+          halten und Ihr Unternehmen vor potenziellen Gefahren zu schützen. Kontaktieren Sie uns
+          noch heute für eine Beratung und ein individuelles Angebot.
+        </p>
 
-        </div>
       </div>
     </section>
   )
