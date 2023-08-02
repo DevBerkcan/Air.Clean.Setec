@@ -1,7 +1,7 @@
 const HowItWorksSection: any = () => {
 
   return (
-    <section className="px-6 pt-0 pb-20" id="how-it-works">
+    <section className="px-6 pb-10" id="how-it-works">
       <div className="container text-center py-8 lg:py-16">
 
         <span className="text-sm font-semibold bg-orange-100 text-orange-400 rounded-full px-3 py-1">How does a cleaning work?</span>

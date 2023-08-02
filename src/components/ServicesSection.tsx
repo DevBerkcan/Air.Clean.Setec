@@ -4,7 +4,7 @@ import kitchenExhaust from '@/assets/images/kitchen-exhaust-2.svg'
 const ServicesSection: any = () => {
 
   return (
-    <section className="px-6 py-20 pb-0" id="services">
+    <section className="px-6 pt-20 pb-0" id="services">
       <div className="container text-center py-8 lg:py-16">
 
         <span className="text-sm font-semibold bg-orange-100 text-orange-400 rounded-full px-3 py-1">Services</span>
