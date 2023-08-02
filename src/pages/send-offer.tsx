@@ -3,8 +3,24 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useFormik } from 'formik';
 import axios from 'axios';
+import { useState } from 'react';
 
 export default function SendOffer() {
+
+  const [alertVisible, setAlertVisible] = useState(false)
+  const [alertMessage, setAlertMessage] = useState('')
+  const [alertType, setAlertType] = useState<'success' | 'error'>('success')
+
+  function showAlert(message: string, type: 'success' | 'error') {
+    setAlertVisible(true)
+    setAlertMessage(message)
+    setAlertType(type)
+  }
+
+  function hideAlert() {
+    setAlertVisible(false)
+    setAlertMessage('')
+  }
 
   const formik = useFormik({
     initialValues: {
@@ -22,9 +38,10 @@ export default function SendOffer() {
     },
     onSubmit: values => {
       axios.post('/api/send-offer', values).then(() => {
-        alert('success')
+        showAlert('Your offer sent successfully to us, we will respond you as soon as possible.', 'success')
       }).catch(() => {
         alert('error')
+        showAlert('Failed to send, please try again.', 'error')
       }).finally(() => {
         formik.setSubmitting(false)
       })
@@ -192,6 +209,24 @@ export default function SendOffer() {
                   </svg>}
                   Senden
                 </button>
+
+                <div className={"transition-opacity duration-300 ease-in " + (alertVisible ? '' : 'opacity-0')}>
+                  <div className={"flex items-center p-4 my-4 rounded-lg " + (alertType == 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800')} role="alert">
+                    <svg className="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                    </svg>
+                    <span className="sr-only">Info</span>
+                    <div className="ml-3 text-sm font-medium">
+                      {alertMessage}
+                    </div>
+                    <button type="button" onClick={hideAlert} className={"ml-auto -mx-1.5 -my-1.5 p-1.5 rounded-lg focus:ring-2 inline-flex items-center justify-center h-8 w-8 " + (alertType == 'success' ? 'bg-green-50 text-rgreened-500 focus:ring-green-400 hover:bg-green-200' : 'bg-red-50 text-red-500 focus:ring-red-400 p-1.5 hover:bg-red-200')} data-dismiss-target="#alert-2" aria-label="Close">
+                      <span className="sr-only">Close</span>
+                      <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
 
               </form>
 
