@@ -40,7 +40,6 @@ export default function SendOffer() {
       axios.post('/api/send-offer', values).then(() => {
         showAlert('Your offer sent successfully to us, we will respond you as soon as possible.', 'success')
       }).catch(() => {
-        alert('error')
         showAlert('Failed to send, please try again.', 'error')
       }).finally(() => {
         formik.setSubmitting(false)

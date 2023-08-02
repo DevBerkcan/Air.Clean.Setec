@@ -12,11 +12,8 @@ function getHtmlTemplate(replacements: {}) {
   return template(replacements)
 }
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<any>
-) {
-  
+export default function handler(req: NextApiRequest, res: NextApiResponse<any>) {
+
   const replacements = {
     ...req.body,
     submittedAt: Date()
@@ -24,18 +21,19 @@ export default function handler(
 
   const htmlTemplate = getHtmlTemplate(replacements)
 
-  transporter.sendMail({
+  const data = {
     from: '"Air Clean" <airclean@gmail.com>',
     to: "bilalbentoumi@gmail.com",
     subject: "Air Clean - Offer Request",
     html: htmlTemplate
-  }, (err: any, info: any) => {
+  }
 
+  transporter.sendMail(data, (err: any) => {
+    console.log(err)
     if (err) {
       return res.status(500).json({ error: true, message: 'Failed to send' })
     }
 
     return res.status(200).json({ success: true, message: 'Message sent successfully' })
   })
-
 }
