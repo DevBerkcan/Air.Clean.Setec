@@ -21,20 +21,20 @@ const Header: any = ({ scrollEffect }: any) => {
   const { scroll } = useScroll()
 
   return (
-    <header className={"fixed w-full left-0 top-0 px-6 py-6 lg:px-8 z-30 duration-100 " + (scrollEffect || scroll > 40 ? 'bg-white/95 backdrop-blur-md shadow-xl shadow-black/[5%] py-4' : '')}>
+    <header className={"fixed w-full left-0 top-0 px-6 py-6 lg:px-8 z-30 duration-100 " + (!scrollEffect || scroll > 40 ? 'bg-white/95 backdrop-blur-md shadow-xl shadow-black/[5%] py-4' : '')}>
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="container flex items-center">
           <div className="flex lg:flex-1">
             <Link href="/#home" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
-              <Image src={scrollEffect || scroll > 40 ? logo : logoWhite} className={"mr-3 duration-100 w-[180px]"} alt="Air Clean" />
+              <Image src={!scrollEffect || scroll > 40 ? logo : logoWhite} className={"mr-3 duration-100 w-[180px]"} alt="Air Clean" />
             </Link>
           </div>
           <div className="flex-grow lg:hidden"></div>
           <div className="flex lg:hidden">
             <button
               type="button"
-              className={"-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 " + (scrollEffect || scroll > 40 ? 'text-gray-700' : 'text-white')}
+              className={"-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 " + (!scrollEffect || scroll > 40 ? 'text-gray-700' : 'text-white')}
               onClick={() => setMobileMenuOpen(true)}>
               <span className="sr-only">Öffne Menü</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -42,13 +42,13 @@ const Header: any = ({ scrollEffect }: any) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} href={item.href} className={"text-sm font-semibold leading-6 " + (scrollEffect || scroll > 40 ? 'text-gray-900' : 'text-white')}>
+              <Link key={item.name} href={item.href} className={"text-sm font-semibold leading-6 " + (!scrollEffect || scroll > 40 ? 'text-gray-900' : 'text-white')}>
                 {item.name}
               </Link>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className={"inline-flex items-center text-sm font-semibold leading-6 " + (scrollEffect || scroll > 40 ? 'text-gray-900 stroke-black' : 'text-white stroke-white')}>
+            <a href="#" className={"inline-flex items-center text-sm font-semibold leading-6 " + (!scrollEffect || scroll > 40 ? 'text-gray-900 stroke-black' : 'text-white stroke-white')}>
             069 - 34 86 88 61
               <svg stroke="inherit" className="inline ml-2" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g stroke="inherit">
@@ -61,7 +61,7 @@ const Header: any = ({ scrollEffect }: any) => {
       </nav>
 
       <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <Dialog.Panel className={"fixed inset-0 z-30 overflow-y-auto bg-white px-6 py-6 lg:hidden " + (scrollEffect || scroll > 40 ? 'py-4' : '')}>
+        <Dialog.Panel className={"fixed inset-0 z-30 overflow-y-auto bg-white px-6 py-6 lg:hidden " + (!scrollEffect || scroll > 40 ? 'py-4' : '')}>
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>

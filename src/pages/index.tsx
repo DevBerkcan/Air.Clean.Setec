@@ -6,16 +6,19 @@ import HowItWorksSection from '@/components/HowItWorksSection'
 import LegalSituationSection from '@/components/LegalSituationSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import MainLayout from '@/layouts/MainLayout'
 
 export default function Index() {
 
   return (
     <>
+
       <Head>
         <title>Air Clean</title>
       </Head>
 
-      <main>
+      <MainLayout scrollEffect={true}>
 
         {/* Hero */}
         <HeroSection />
@@ -31,10 +34,7 @@ export default function Index() {
         {/* Contact */}
         <ContactSection />
 
-        {/* Hero */}
-        <Footer />
-
-      </main>
+      </MainLayout>
 
     </>
   )

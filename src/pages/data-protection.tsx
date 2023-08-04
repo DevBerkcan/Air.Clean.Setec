@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import MainLayout from '@/layouts/MainLayout'
 
 export default function PrivacyPolicy() {
 
@@ -10,11 +9,7 @@ export default function PrivacyPolicy() {
         <title>Air Clean - Datenschutzerklärung</title>
       </Head>
 
-      <main>
-
-        {/* Hero */}
-        <Header scrollEffect={true} />
-
+      <MainLayout>
         <div className="py-40">
 
           <div className="px-4 sm:px-6 lg:px-8">
@@ -168,11 +163,7 @@ export default function PrivacyPolicy() {
           </div>
 
         </div>
-
-        <Footer />
-
-      </main>
-
+      </MainLayout>
     </>
   )
 }

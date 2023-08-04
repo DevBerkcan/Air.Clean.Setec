@@ -14,6 +14,10 @@ function getHtmlTemplate(replacements: {}) {
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<any>) {
 
+  if (req.method != 'POST') {
+    res.status(405).json('Not Allowed')
+  }
+
   const replacements = {
     ...req.body,
     submittedAt: Date()
@@ -29,7 +33,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<any>) 
   }
 
   transporter.sendMail(data, (err: any) => {
-    console.log(err)
+
     if (err) {
       return res.status(500).json({ error: true, message: 'Failed to send' })
     }

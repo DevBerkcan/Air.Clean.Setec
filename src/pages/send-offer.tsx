@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import { useFormik } from 'formik';
-import axios from 'axios';
-import { useState } from 'react';
+import MainLayout from '@/layouts/MainLayout'
+import { useState } from 'react'
+import { useFormik } from 'formik'
+import axios from 'axios'
 
 export default function SendOffer() {
 
@@ -53,11 +52,7 @@ export default function SendOffer() {
         <title>Air Clean - Angebot einholen</title>
       </Head>
 
-      <main>
-
-        {/* Hero */}
-        <Header scrollEffect={true} />
-
+      <MainLayout>
         <div className="py-40">
 
           <div className="px-4 sm:px-6 lg:px-8">
@@ -233,11 +228,7 @@ export default function SendOffer() {
           </div>
 
         </div>
-
-        <Footer />
-
-      </main>
-
+      </MainLayout>
     </>
   )
 }

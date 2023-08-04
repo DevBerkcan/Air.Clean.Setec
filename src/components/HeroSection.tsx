@@ -1,13 +1,9 @@
-import Header from "./Header"
-
 const HeroSection: any = () => {
 
   return (
     <section className="relative px-6 lg:px-8 pt-20 bg-[url('/hero-background.jpg')] bg-fixed bg-center" id="home">
 
-      <div className="bg-black bg-opacity-60 absolute top-0 left-0 w-full h-full z-10"></div>
-
-      <Header />
+      <div className="bg-black bg-opacity-80 absolute top-0 left-0 w-full h-full z-10"></div>
 
       <div className="relative mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 z-20">
         <div className="text-center">
