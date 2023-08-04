@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import kitchenExhaust from '@/assets/images/kitchen-exhaust-2.svg'
+import kitchenExhaust from '@/assets/images/kitchen-exhaust.svg'
 
 const ServicesSection: any = () => {
 
