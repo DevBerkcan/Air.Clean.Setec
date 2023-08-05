@@ -1,7 +1,7 @@
 const HeroSection: any = () => {
 
   return (
-    <section className="relative px-6 lg:px-8 pt-20 bg-[url('/hero-background.jpg')] bg-fixed bg-center" id="home">
+    <section className="relative px-6 lg:px-8 pt-20 bg-[url('/pipes.png')] bg-fixed bg-cover bg-center" id="home">
 
       <div className="bg-black bg-opacity-80 absolute top-0 left-0 w-full h-full z-10"></div>
 
