@@ -1,13 +1,11 @@
 import Head from 'next/head'
+import MainLayout from '@/layouts/MainLayout'
 import HeroSection from '@/components/HeroSection'
 import AboutSection from '@/components/AboutSection'
 import ServicesSection from '@/components/ServicesSection'
 import HowItWorksSection from '@/components/HowItWorksSection'
 import LegalSituationSection from '@/components/LegalSituationSection'
-import ContactSection from '@/components/ContactSection'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import MainLayout from '@/layouts/MainLayout'
+import SendOfferSection from '@/components/SendOfferSection'
 
 export default function Index() {
 
@@ -18,7 +16,7 @@ export default function Index() {
         <title>Air Clean</title>
       </Head>
 
-      <MainLayout scrollEffect={true}>
+      <MainLayout scrollEffect={false}>
 
         {/* Hero */}
         <HeroSection />
@@ -31,8 +29,8 @@ export default function Index() {
         <HowItWorksSection />
         <LegalSituationSection />
 
-        {/* Contact */}
-        <ContactSection />
+        {/* Send Offer */}
+        <SendOfferSection />
 
       </MainLayout>
 
