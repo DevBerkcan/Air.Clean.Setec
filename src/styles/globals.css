@@ -24,3 +24,16 @@ html {
 .container {
     @apply max-w-7xl mx-auto;
 }
+
+/* Swiper Navigation */
+.swiper-button-prev, .swiper-button-next {
+    @apply text-white !important;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    @apply bg-white !important;
+}
+.swiper-pagination-bullet-active {
+    @apply bg-white !important;
+}

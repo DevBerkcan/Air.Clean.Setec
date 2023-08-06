@@ -1,8 +1,12 @@
 import Image from "next/image"
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination } from 'swiper/modules'
+
 import useMediaQuery from "@/hooks/useMediaQuery"
 
 import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 import slide1 from '@/assets/images/pictures/1.jpeg'
 import slide2 from '@/assets/images/pictures/2.jpeg'
@@ -27,7 +31,10 @@ const SlidesSection: any = () => {
   return (
     <section id="slides">
       <Swiper
+        modules={[Navigation, Pagination]}
         slidesPerView={isMobile ? 1 : 3}
+        navigation={true}
+        pagination={true}
         loop={true}>
         {pictures.map((picture, index) => (
           <SwiperSlide key={index}>
