@@ -1,5 +1,4 @@
-import Image from "next/image"
-import logoIcon from '@/assets/images/logo-icon.png'
+import IconLogo from "./IconLogo"
 
 const AboutSection: any = () => {
 
@@ -8,7 +7,7 @@ const AboutSection: any = () => {
       <div className="px-6 py-20 bg-white/20">
         <div className="container text-center py-8 lg:py-16">
 
-          <Image className="mx-auto my-6" src={logoIcon} width={100} alt="Air Clean" />
+          <IconLogo />
           
           <span className="inline-flex text-sm font-semibold bg-orange-100 text-orange-400 rounded-full px-3 py-1 mb-4">About us</span>
           <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Welcome to our Air Cleaning Solutions!</h2>

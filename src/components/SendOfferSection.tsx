@@ -1,6 +1,5 @@
-import Image from "next/image"
-import logoIcon from '@/assets/images/logo-icon.png'
 import Link from "next/link"
+import IconLogo from "./IconLogo"
 
 const SendOfferSection: any = () => {
 
@@ -9,7 +8,7 @@ const SendOfferSection: any = () => {
       <div className="px-6 py-20 bg-white/70">
         <div className="container text-center py-8 lg:py-16">
 
-          <Image className="mx-auto my-6" src={logoIcon} width={100} alt="Air Clean" />
+          <IconLogo />
 
           <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Convinced?</h2>
           <div className="mx-auto max-w-2xl">
