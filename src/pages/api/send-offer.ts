@@ -1,16 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
-import path from 'path'
-import * as fs from 'fs'
 import transporter from '@/lib/transporter'
-import * as handlebars from 'handlebars'
-
-function getHtmlTemplate(replacements: {}) {
-  const filePath = path.join(path.resolve(), './src/templates/send-offer.html')
-  const source = fs.readFileSync(filePath, 'utf-8').toString()
-  const template = handlebars.compile(source)
-  return template(replacements)
-}
+import getHtmlTemplate from '@/lib/template'
+import path from 'path'
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<any>) {
 
@@ -18,12 +10,22 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<any>) 
     res.status(405).json('Not Allowed')
   }
 
-  const replacements = {
-    ...req.body,
-    submittedAt: Date()
+  const templatePath = path.join(path.resolve(), './src/templates/send-offer.hbs')
+  const templateParam = {
+    'Company': req.body.company,
+    'Name': req.body.name,
+    'Email': req.body.email,
+    'Phone': req.body.phone,
+    'Postcode': req.body.postCode,
+    'Location': req.body.location,
+    'Are you a DEHOGA member?': req.body.dehoga,
+    'Length of the plant in cm': req.body.length,
+    'Width of the plant in cm': req.body.width,
+    'Message': req.body.message,
+    'How did you find out about us?': req.body.referer,
   }
-
-  const htmlTemplate = getHtmlTemplate(replacements)
+  
+  const htmlTemplate = getHtmlTemplate(templatePath, templateParam)
 
   const data = {
     from: '"Air Clean" <airclean@gmail.com>',
