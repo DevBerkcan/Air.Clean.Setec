@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import IconLogo from './IconLogo'
 import { ImgComparisonSlider } from '@img-comparison-slider/react'
-import before1 from '@/assets/images/pictures/before.jpeg'
-import before2 from '@/assets/images/pictures/before2.jpeg'
-import after1 from '@/assets/images/pictures/after.jpeg'
-import after2 from '@/assets/images/pictures/after2.jpeg'
+import before1 from '@/assets/images/cleaning-comparison/before.jpeg'
+import before2 from '@/assets/images/cleaning-comparison/before2.jpeg'
+import after1 from '@/assets/images/cleaning-comparison/after.jpeg'
+import after2 from '@/assets/images/cleaning-comparison/after2.jpeg'
 
 const ServicesSection: any = () => {
 

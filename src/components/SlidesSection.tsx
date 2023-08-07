@@ -8,12 +8,12 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-import slide1 from '@/assets/images/pictures/1.jpeg'
-import slide2 from '@/assets/images/pictures/2.jpeg'
-import slide3 from '@/assets/images/pictures/3.jpeg'
-import slide4 from '@/assets/images/pictures/4.jpeg'
-import slide5 from '@/assets/images/pictures/5.jpeg'
-import slide6 from '@/assets/images/pictures/6.jpeg'
+import slide1 from '@/assets/images/slides/1.jpeg'
+import slide2 from '@/assets/images/slides/2.jpeg'
+import slide3 from '@/assets/images/slides/3.jpeg'
+import slide4 from '@/assets/images/slides/4.jpeg'
+import slide5 from '@/assets/images/slides/5.jpeg'
+import slide6 from '@/assets/images/slides/6.jpeg'
 
 const SlidesSection: any = () => {
 
