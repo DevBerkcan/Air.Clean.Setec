@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Dialog } from '@headlessui/react'
-import logo from '../assets/images/logo.png'
-import logoWhite from '../assets/images/logo-white.png'
+import logo from '../assets/images/logo.svg'
+import logoWhite from '../assets/images/logo-white.svg'
 import Image from 'next/image'
 import useScroll from '@/hooks/useScroll'
 import Link from 'next/link'
@@ -26,7 +26,7 @@ const Header: any = ({ scrollEffect }: any) => {
           <div className="flex lg:flex-1">
             <Link href="/#home" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
-              <Image src={!scrollEffect || scroll > 40 ? logo : logoWhite} className={"mr-3 duration-100 w-[180px]"} alt="Air Clean" />
+              <Image src={!scrollEffect || scroll > 40 ? logo : logoWhite} className="duration-100" alt="Air Clean" />
             </Link>
           </div>
           <div className="flex-grow lg:hidden"></div>
@@ -64,7 +64,7 @@ const Header: any = ({ scrollEffect }: any) => {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
-              <Image src={logo} className={"duration-100 w-[180px]"} alt="Air Clean" />
+              <Image src={logo} className="duration-100" alt="Air Clean" />
             </a>
             <button
               type="button"
