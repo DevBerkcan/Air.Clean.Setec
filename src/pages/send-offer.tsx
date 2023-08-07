@@ -32,6 +32,10 @@ export default function SendOffer() {
       postCode: '16000',
       location: 'Algeria',
 
+      ventilation: 'Yes',
+      canalTexture: 'Plastic',
+      canalFormat: 'Around',
+
       message: 'Hello World!',
       referer: 'Google',
     },
@@ -160,6 +164,113 @@ export default function SendOffer() {
                         onChange={formik.handleChange}
                         value={formik.values.location}
                         required />
+                    </div>
+                  </div>
+                </div>
+
+                <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Information about the facility</h2>
+                <div className="space-y-4">
+                  <div>
+                    <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">Is there a ventilation concept?</label>
+                    <div className="flex gap-4">
+                      <div className="flex items-center">
+                        <input
+                          id="ventilation-yes"
+                          type="radio"
+                          value="Yes"
+                          name="ventilation"
+                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                          checked={formik.values.ventilation == 'Yes'}
+                          onChange={() => formik.setFieldValue('ventilation', 'Yes')} />
+                        <label htmlFor="ventilation-yes" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          id="ventilation-no"
+                          type="radio"
+                          value="No"
+                          name="ventilation"
+                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                          checked={formik.values.ventilation == 'No'}
+                          onChange={() => formik.setFieldValue('ventilation', 'No')} />
+                        <label htmlFor="ventilation-no" className="ml-2 text-sm font-medium text-gray-900">No</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">Texture of the canal</label>
+                    <div className="flex gap-4">
+                      <div className="flex items-center">
+                        <input
+                          id="canalTexture-plastic"
+                          type="radio"
+                          value="Plastic"
+                          name="canalTexture"
+                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                          checked={formik.values.canalTexture == 'Plastic'}
+                          onChange={() => formik.setFieldValue('canalTexture', 'Plastic')} />
+                        <label htmlFor="canalTexture-plastic" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Plastic</label>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          id="canalTexture-metal"
+                          type="radio"
+                          value="Metal"
+                          name="canalTexture"
+                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                          checked={formik.values.canalTexture == 'Metal'}
+                          onChange={() => formik.setFieldValue('canalTexture', 'Metal')} />
+                        <label htmlFor="canalTexture-metal" className="ml-2 text-sm font-medium text-gray-900">Metal</label>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          id="canalTexture-miscellaneous"
+                          type="radio"
+                          value="Miscellaneous"
+                          name="canalTexture"
+                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                          checked={formik.values.canalTexture == 'Miscellaneous'}
+                          onChange={() => formik.setFieldValue('canalTexture', 'Miscellaneous')} />
+                        <label htmlFor="canalTexture-miscellaneous" className="ml-2 text-sm font-medium text-gray-900">Miscellaneous</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">Format of the channel</label>
+                    <div className="flex gap-4">
+                      <div className="flex items-center">
+                        <input
+                          id="canalFormat-around"
+                          type="radio"
+                          value="Around"
+                          name="canalFormat"
+                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                          checked={formik.values.canalFormat == 'Around'}
+                          onChange={() => formik.setFieldValue('canalFormat', 'Around')} />
+                        <label htmlFor="canalFormat-around" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Around</label>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          id="canalFormat-square"
+                          type="radio"
+                          value="Square"
+                          name="canalFormat"
+                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                          checked={formik.values.canalFormat == 'Square'}
+                          onChange={() => formik.setFieldValue('canalFormat', 'Square')} />
+                        <label htmlFor="canalFormat-square" className="ml-2 text-sm font-medium text-gray-900">Square</label>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          id="canalFormat-oval"
+                          type="radio"
+                          value="Oval"
+                          name="canalFormat"
+                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                          checked={formik.values.canalFormat == 'Oval'}
+                          onChange={() => formik.setFieldValue('canalFormat', 'Oval')} />
+                        <label htmlFor="canalFormat-oval" className="ml-2 text-sm font-medium text-gray-900">Oval</label>
+                      </div>
                     </div>
                   </div>
                 </div>
