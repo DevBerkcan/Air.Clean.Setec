@@ -55,13 +55,13 @@ export default function SendOffer() {
       <MainLayout>
         <div className="py-40">
 
-          <div className="px-4 sm:px-6 lg:px-8">
+          <div className="px-6 lg:px-8">
             <div className="relative mx-auto max-w-[37.5rem] pt-20 text-center pb-24">
               <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Angebot einholen</h1>
             </div>
           </div>
 
-          <div className="relative px-4 sm:px-6 lg:px-8">
+          <div className="relative px-6 lg:px-8">
             <div className="mx-auto max-w-[40rem]">
 
               <form action="/api/send-offer" method="POST" onSubmit={formik.handleSubmit}>
