@@ -10,7 +10,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<any>) 
     res.status(405).json('Not Allowed')
   }
 
-  const templatePath = path.join(path.resolve(), './src/templates/send-offer.hbs')
+  const templatePath = path.join(path.resolve(), './src/templates/request-offer.hbs')
   const templateParam = {
     'Firmenname': req.body.company,
     'Name Kontaktperson': req.body.name,

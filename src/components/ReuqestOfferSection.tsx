@@ -1,10 +1,10 @@
 import Link from "next/link"
 import IconLogo from "./IconLogo"
 
-const SendOfferSection: any = () => {
+const ReuqestOfferSection: any = () => {
 
   return (
-    <section className="bg-[url('/background1.png')] bg-cover bg-center" id="send-offer">
+    <section className="bg-[url('/background1.png')] bg-cover bg-center" id="request-offer">
       <div className="px-6 py-20 bg-white/70">
         <div className="container text-center py-8 lg:py-16">
 
@@ -15,7 +15,7 @@ const SendOfferSection: any = () => {
             <p className="mt-2 text-lg leading-8 text-gray-600">
               Get your individual offer from us.
             </p>
-            <Link href="/send-offer" className="inline-flex py-3 px-5 mt-6 text-sm font-medium text-center text-white rounded-lg bg-indigo-700 sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300">
+            <Link href="/request-offer" className="inline-flex py-3 px-5 mt-6 text-sm font-medium text-center text-white rounded-lg bg-indigo-700 sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300">
               Angebot Einholen
             </Link>
           </div>
@@ -26,4 +26,4 @@ const SendOfferSection: any = () => {
   )
 }
 
-export default SendOfferSection
+export default ReuqestOfferSection

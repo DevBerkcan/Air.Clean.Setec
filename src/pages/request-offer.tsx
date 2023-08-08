@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useFormik } from 'formik'
 import axios from 'axios'
 
-export default function SendOffer() {
+export default function ReuqestOffer() {
 
   const [alertVisible, setAlertVisible] = useState(false)
   const [alertMessage, setAlertMessage] = useState('')
@@ -37,7 +37,7 @@ export default function SendOffer() {
       referer: '',
     },
     onSubmit: values => {
-      axios.post('/api/send-offer', values).then(() => {
+      axios.post('/api/request-offer', values).then(() => {
         showAlert('Ihr Angebot wurde erfolgreich an uns gesendet, wir werden Ihnen so schnell wie möglich antworten.', 'success')
       }).catch((e) => {
         console.log(e)
@@ -66,7 +66,7 @@ export default function SendOffer() {
           <div className="relative px-6 lg:px-8">
             <div className="mx-auto max-w-[40rem]">
 
-              <form action="/api/send-offer" method="POST" onSubmit={formik.handleSubmit}>
+              <form action="/api/request-offer" method="POST" onSubmit={formik.handleSubmit}>
 
                 <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Ansprechpartner</h2>
                 <div className="space-y-4">

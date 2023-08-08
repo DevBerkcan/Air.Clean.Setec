@@ -4,7 +4,7 @@ import HeroSection from '@/components/HeroSection'
 import AboutSection from '@/components/AboutSection'
 import ServicesSection from '@/components/ServicesSection'
 import SlidesSection from '@/components/SlidesSection'
-import SendOfferSection from '@/components/SendOfferSection'
+import ReuqestOfferSection from '@/components/ReuqestOfferSection'
 
 export default function Index() {
 
@@ -30,7 +30,7 @@ export default function Index() {
         <SlidesSection />
 
         {/* Send Offer */}
-        <SendOfferSection />
+        <ReuqestOfferSection />
 
       </MainLayout>
 

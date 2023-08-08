@@ -22,7 +22,7 @@ const Footer: any = () => {
                   <a href="#services" className="hover:underline">Leistungen</a>
                 </li>
                 <li>
-                  <Link href="/send-offer" className="hover:underline">Angebot Einholen</Link>
+                  <Link href="/request-offer" className="hover:underline">Angebot Einholen</Link>
                 </li>
               </ul>
             </div>
