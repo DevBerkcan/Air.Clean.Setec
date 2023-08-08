@@ -30,7 +30,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<any>) 
 
   const data = {
     from: '"Air Clean" <airclean@gmail.com>',
-    to: "bilalbentoumi@gmail.com",
+    to: process.env.SEND_OFFER_MAIL_TO,
     subject: "Air Clean - Angebotsanfrage",
     html: htmlTemplate
   }
