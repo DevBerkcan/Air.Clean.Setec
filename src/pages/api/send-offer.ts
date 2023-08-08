@@ -12,17 +12,18 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<any>) 
 
   const templatePath = path.join(path.resolve(), './src/templates/send-offer.hbs')
   const templateParam = {
-    'Company': req.body.company,
-    'Name': req.body.name,
-    'Email': req.body.email,
-    'Phone': req.body.phone,
-    'Postcode': req.body.postCode,
-    'Location': req.body.location,
-    'Are you a DEHOGA member?': req.body.dehoga,
-    'Length of the plant in cm': req.body.length,
-    'Width of the plant in cm': req.body.width,
-    'Message': req.body.message,
-    'How did you find out about us?': req.body.referer,
+    'Firmenname': req.body.company,
+    'Name Kontaktperson': req.body.name,
+    'Mailadresse Kontaktperson': req.body.email,
+    'Telefonnummer': req.body.phone,
+    'Straße & Hausnr.': req.body.street,
+    'PLZ': req.body.postCode,
+    'Ort': req.body.location,
+    'Länge der Anlage in cm': req.body.length,
+    'Breite der Anlage in cm': req.body.width,
+    'Sind Sie DEHOGA-Mitglied?': req.body.dehoga,
+    'Ihre Nachricht an uns': req.body.message,
+    'Wie sind Sie auf uns aufmerksam geworden?': req.body.referer,
   }
   
   const htmlTemplate = getHtmlTemplate(templatePath, templateParam)
@@ -30,7 +31,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<any>) 
   const data = {
     from: '"Air Clean" <airclean@gmail.com>',
     to: "bilalbentoumi@gmail.com",
-    subject: "Air Clean - Offer Request",
+    subject: "Air Clean - Angebotsanfrage",
     html: htmlTemplate
   }
 

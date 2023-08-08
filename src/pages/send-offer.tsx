@@ -23,28 +23,25 @@ export default function SendOffer() {
 
   const formik = useFormik({
     initialValues: {
-      company: 'Deveo',
-      name: 'Bilal Bentoumi',
-      email: 'bilalbentoumi@gmail.com',
-      phone: '0667 00 92 43',
-
-      street: 'Algiers',
-      postCode: '16000',
-      location: 'Algeria',
-
-      dehoga: 'Yes',
-      length: '100',
-      width: '100',
-
-      message: 'Hello World!',
-      referer: 'Google',
+      company: '',
+      name: '',
+      email: '',
+      phone: '',
+      street: '',
+      postCode: '',
+      location: '',
+      dehoga: '',
+      length: '',
+      width: '',
+      message: '',
+      referer: '',
     },
     onSubmit: values => {
       axios.post('/api/send-offer', values).then(() => {
-        showAlert('Your offer sent successfully to us, we will respond you as soon as possible.', 'success')
+        showAlert('Ihr Angebot wurde erfolgreich an uns gesendet, wir werden Ihnen so schnell wie möglich antworten.', 'success')
       }).catch((e) => {
         console.log(e)
-        showAlert('Failed to send, please try again.', 'error')
+        showAlert('Fehler beim Senden. Bitte versuchen Sie es erneut.', 'error')
       }).finally(() => {
         formik.setSubmitting(false)
       })
@@ -71,29 +68,32 @@ export default function SendOffer() {
 
               <form action="/api/send-offer" method="POST" onSubmit={formik.handleSubmit}>
 
-                <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Contact Person</h2>
+                <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Ansprechpartner</h2>
                 <div className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="company" className="block mb-2 text-sm font-medium text-gray-900">Company</label>
+                      <label htmlFor="company" className="block mb-2 text-sm font-medium text-gray-900">
+                        Firmenname
+                      </label>
                       <input
                         type="text"
                         name="company"
                         id="company"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
-                        placeholder="Company Name"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
+                        placeholder="Der Name Ihres Unternehmens"
                         onChange={formik.handleChange}
-                        value={formik.values.company}
-                        required />
+                        value={formik.values.company} />
                     </div>
                     <div>
-                      <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900">Name</label>
+                      <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900">
+                        Name Kontaktperson<span className="text-red-600 mx-1">*</span>
+                      </label>
                       <input
                         type="text"
                         name="name"
                         id="name"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
-                        placeholder="John Doe"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
+                        placeholder="Max Mustermann"
                         onChange={formik.handleChange}
                         value={formik.values.name}
                         required />
@@ -101,25 +101,29 @@ export default function SendOffer() {
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">Email</label>
+                      <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">
+                        Mailadresse Kontaktperson<span className="text-red-600 mx-1">*</span>
+                      </label>
                       <input
                         type="email"
                         name="email"
                         id="email"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
                         placeholder="email@gentle-webdesign.de"
                         onChange={formik.handleChange}
                         value={formik.values.email}
                         required />
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900">Phone Number</label>
+                      <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900">
+                        Telefonnummer<span className="text-red-600 mx-1">*</span>
+                      </label>
                       <input
                         type="text"
                         name="phone"
                         id="phone"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
-                        placeholder="+213 01 23 45 67"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
+                        placeholder="+00491234567890"
                         onChange={formik.handleChange}
                         value={formik.values.phone}
                         required />
@@ -127,41 +131,47 @@ export default function SendOffer() {
                   </div>
                 </div>
 
-                <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Mailing Address</h2>
+                <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Postanschrift</h2>
                 <div className="space-y-4">
                   <div>
-                    <label htmlFor="street" className="block mb-2 text-sm font-medium text-gray-900">Street</label>
+                    <label htmlFor="street" className="block mb-2 text-sm font-medium text-gray-900">
+                      Straße & Hausnr.<span className="text-red-600 mx-1">*</span>
+                    </label>
                     <input
                       type="text"
                       name="street"
                       id="street"
                       className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-                      placeholder="Street"
+                      placeholder="Musterstraße 1a"
                       onChange={formik.handleChange}
                       value={formik.values.street}
                       required />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="postCode" className="block mb-2 text-sm font-medium text-gray-900">Postal Code</label>
+                      <label htmlFor="postCode" className="block mb-2 text-sm font-medium text-gray-900">
+                        PLZ<span className="text-red-600 mx-1">*</span>
+                      </label>
                       <input
                         type="text"
                         name="postCode"
                         id="postCode"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
-                        placeholder="00000"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
+                        placeholder="12"
                         onChange={formik.handleChange}
                         value={formik.values.postCode}
                         required />
                     </div>
                     <div>
-                      <label htmlFor="location" className="block mb-2 text-sm font-medium text-gray-900">Location</label>
+                      <label htmlFor="location" className="block mb-2 text-sm font-medium text-gray-900">
+                        Ort<span className="text-red-600 mx-1">*</span>
+                      </label>
                       <input
                         type="text"
                         name="location"
                         id="location"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
-                        placeholder="Location"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
+                        placeholder="Der Name ihres Wohnortes"
                         onChange={formik.handleChange}
                         value={formik.values.location}
                         required />
@@ -169,78 +179,83 @@ export default function SendOffer() {
                   </div>
                 </div>
 
-                <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Information about the facility</h2>
+                <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Angaben zur Küchenabluftanlage</h2>
                 <div className="space-y-4">
-                  <div>
-                    <label htmlFor="dehoga" className="block mb-2 text-sm font-medium text-gray-900">Are you a DEHOGA member?</label>
-                    <div className="flex gap-4">
-                      <div className="flex items-center">
-                        <input
-                          id="dehoga-yes"
-                          type="radio"
-                          value="Yes"
-                          name="dehoga"
-                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
-                          checked={formik.values.dehoga == 'Yes'}
-                          onChange={() => formik.setFieldValue('dehoga', 'Yes')} />
-                        <label htmlFor="dehoga-yes" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
-                      </div>
-                      <div className="flex items-center">
-                        <input
-                          id="dehoga-no"
-                          type="radio"
-                          value="No"
-                          name="dehoga"
-                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
-                          checked={formik.values.dehoga == 'No'}
-                          onChange={() => formik.setFieldValue('dehoga', 'No')} />
-                        <label htmlFor="dehoga-no" className="ml-2 text-sm font-medium text-gray-900">No</label>
-                      </div>
-                    </div>
-                  </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="length" className="block mb-2 text-sm font-medium text-gray-900">Length of the plant in cm</label>
+                      <label htmlFor="length" className="block mb-2 text-sm font-medium text-gray-900">
+                        Länge der Anlage in cm<span className="text-red-600 mx-1">*</span>
+                      </label>
                       <input
                         type="text"
                         name="length"
                         id="length"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
                         placeholder="100"
                         onChange={formik.handleChange}
                         value={formik.values.length}
                         required />
                     </div>
                     <div>
-                      <label htmlFor="width" className="block mb-2 text-sm font-medium text-gray-900">Width of the plant in cm</label>
+                      <label htmlFor="width" className="block mb-2 text-sm font-medium text-gray-900">
+                        Breite der Anlage in cm<span className="text-red-600 mx-1">*</span>
+                      </label>
                       <input
                         type="text"
                         name="width"
                         id="width"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
                         placeholder="100"
                         onChange={formik.handleChange}
                         value={formik.values.width}
                         required />
                     </div>
                   </div>
+                  <div>
+                    <label htmlFor="dehoga" className="block mb-2 text-sm font-medium text-gray-900">
+                      Sind Sie DEHOGA-Mitglied?
+                    </label>
+                    <div className="flex gap-4">
+                      <div className="flex items-center">
+                        <input
+                          id="dehoga-yes"
+                          type="radio"
+                          value="ja"
+                          name="dehoga"
+                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                          checked={formik.values.dehoga == 'ja'}
+                          onChange={() => formik.setFieldValue('dehoga', 'ja')} />
+                        <label htmlFor="dehoga-yes" className="ml-2 text-sm font-medium text-gray-900">ja</label>
+                      </div>
+                      <div className="flex items-center">
+                        <input
+                          id="dehoga-no"
+                          type="radio"
+                          value="nein"
+                          name="dehoga"
+                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                          checked={formik.values.dehoga == 'nein'}
+                          onChange={() => formik.setFieldValue('dehoga', 'nein')} />
+                        <label htmlFor="dehoga-no" className="ml-2 text-sm font-medium text-gray-900">nein</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Miscellaneous</h2>
+                <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Sonstiges</h2>
                 <div className="space-y-4">
                   <div>
-                    <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">Your message to us</label>
+                    <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">Ihre Nachricht an uns</label>
                     <textarea
                       name="message"
                       id="message"
                       className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                       placeholder="Message"
                       onChange={formik.handleChange}
-                      value={formik.values.message}
-                      required></textarea>
+                      value={formik.values.message}></textarea>
                   </div>
                   <div>
-                    <label htmlFor="referer" className="block mb-2 text-sm font-medium text-gray-900">How did you find out about us (optional)?</label>
+                    <label htmlFor="referer" className="block mb-2 text-sm font-medium text-gray-900">Wie sind Sie auf uns aufmerksam geworden?</label>
                     <select
                       name="referer"
                       id="referer"
@@ -248,12 +263,27 @@ export default function SendOffer() {
                       onChange={formik.handleChange}
                       value={formik.values.referer}
                       required>
-                      <option value="Google">Google</option>
-                      <option value="Linkedin">Linkedin</option>
-                      <option value="Other">Other</option>
+                      <option value="Empfehlung">Empfehlung</option>
+                      <option value="Werbung">Werbung</option>
+                      <option value="Internet">Internet</option>
+                      <option value="Sonstiges">Sonstiges</option>
                     </select>
                   </div>
                 </div>
+
+                <div className="flex mt-6">
+                  <input
+                    id="policyAgree"
+                    type="checkbox"
+                    value="Yes"
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                    required />
+                  <label htmlFor="policyAgree" className="ml-2 text-sm font-medium text-gray-900">
+                    Hiermit erkläre ich mich einverstanden, dass meine in das Kontaktformular eingegebenen Daten gemäß der Datenschutzerklärung elektronisch gespeichert und zum Zweck der Kontaktaufnahme verarbeitet und genutzt werden. Mir ist bekannt, dass ich meine Einwilligung jederzeit widerrufen kann. Die Daten werden nicht an Dritte weitergegeben.
+                  </label>
+                </div>
+
+                <p className="mt-6 text-sm text-gray-600">Hinweis: Felder, die mit einem roten Stern (<span className="text-red-600 mx-1">*</span>) gekennzeichnet sind, sind erforderlich, um Maric Airclean über die Website kontaktieren zu können.</p>
 
                 <button
                   type="submit"
