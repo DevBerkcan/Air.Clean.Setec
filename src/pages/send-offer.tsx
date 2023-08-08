@@ -187,7 +187,7 @@ export default function SendOffer() {
                         Länge der Anlage in cm<span className="text-red-600 mx-1">*</span>
                       </label>
                       <input
-                        type="text"
+                        type="number"
                         name="length"
                         id="length"
                         className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
@@ -201,7 +201,7 @@ export default function SendOffer() {
                         Breite der Anlage in cm<span className="text-red-600 mx-1">*</span>
                       </label>
                       <input
-                        type="text"
+                        type="number"
                         name="width"
                         id="width"
                         className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
