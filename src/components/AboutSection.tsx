@@ -9,8 +9,8 @@ const AboutSection: any = () => {
 
           <IconLogo />
 
-          <span className="inline-flex text-sm font-semibold bg-orange-100 text-orange-400 rounded-full px-3 py-1 mb-4">About us</span>
-          <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Welcome to our Air Cleaning Solutions!</h2>
+          <span className="inline-flex text-sm font-semibold bg-orange-100 text-orange-400 rounded-full px-3 py-1 mb-4">Über uns</span>
+          <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Willkommen bei unseren Luftreinigungslösungen!</h2>
           <h4 className="text-lg sm:text-2xl font-bold tracking-tight text-sky-600">Abluftanlagen Reinigung aus Standort</h4>
 
           <div className="mx-auto max-w-2xl">

@@ -13,7 +13,7 @@ const ServicesSection: any = () => {
 
       <IconLogo />
       <div className="flex">
-        <span className="mx-auto mb-4 text-sm font-semibold bg-orange-100 text-orange-400 rounded-full px-3 py-1">Services</span>
+        <span className="mx-auto mb-4 text-sm font-semibold bg-orange-100 text-orange-400 rounded-full px-3 py-1">Leistung</span>
       </div>
 
       <div className="container py-8 lg:py-16 space-y-8 lg:space-y-20">
@@ -46,7 +46,7 @@ const ServicesSection: any = () => {
             </ImgComparisonSlider>
           </div>
           <div className="lg:order-1">
-            <h2 className="mb-2 lg:mb-4 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">How does a cleaning work?</h2>
+            <h2 className="mb-2 lg:mb-4 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Wie läuft eine Reinigung ab?</h2>
             <p className="mb-6 text-md leading-[28px] text-gray-600">
               Unsere Küchenabluftreinigung erfolgt während des Betriebsstillstands oder nachts. Sie
               müssen nicht permanent vor Ort sein, sondern nur zu Beginn und am Ende für die Abnahme.
