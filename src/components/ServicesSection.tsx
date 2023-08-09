@@ -70,14 +70,14 @@ const ServicesSection: any = () => {
         </div>
 
         {/* Legal Situation */}
-        <div className="max-w-[600px] mx-auto">
-          <h2 className="mb-2 lg:mb-4 text-2xl sm:text-4xl text-center font-bold tracking-tight text-gray-900">
+        <div className="max-w-[600px] mx-auto lg:text-center">
+          <h2 className="mb-2 lg:mb-4 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">
             <svg className="inline-flex w-6 h-6 lg:w-8 lg:h-8 text-red-500 mx-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
             </svg>
             Rechtslage zur Küchenabluftreinigung
           </h2>
-          <p className="mb-6 text-md text-center leading-[28px] text-gray-600">
+          <p className="mb-6 text-md leading-[28px] text-gray-600">
             Die rechtlichen Vorgaben zur Reinigung von gewerblichen Küchenabluftanlagen sind durch die VDI Richtlinie 2052 in Verbindung mit der BGR 111 und dem Arbeitsschutzgesetz (ArbSchG) festgelegt. Gemäß diesen Vorschriften sind regelmäßige Inspektionen und eine fachgerechte Reinigung der Anlagen erforderlich. Wenn diese Vorgaben nicht oder unzureichend beachtet werden, kann es im Falle von Schäden oder Beanstandungen zu einem sogenannten Organisationsverschulden kommen. In solchen Fällen haften sowohl die Unternehmensführung als auch der verantwortliche Mitarbeiter.
           </p>
         </div>
