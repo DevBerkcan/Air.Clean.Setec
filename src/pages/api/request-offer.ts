@@ -31,6 +31,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 
   const templatePath = path.join(path.resolve(), './src/templates/request-offer.hbs')
   const templateParam = {
+    'Service-/Reinigungsart': fields.type[0],
     'Firmenname': fields.company[0],
     'Name Kontaktperson': fields.name[0],
     'Mailadresse Kontaktperson': fields.email[0],
@@ -45,7 +46,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     'Wie sind Sie auf uns aufmerksam geworden?': fields.referer[0],
   }
 
-  const attachments = files['pictures[]'].map((picture: any) => {
+  const attachments = files['pictures[]']?.map((picture: any) => {
     return {
       filename: picture.originalFilename,
       path: picture.filepath

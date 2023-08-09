@@ -24,6 +24,7 @@ export default function ReuqestOffer() {
 
   const formik = useFormik({
     initialValues: {
+      type: '',
       company: '',
       name: '',
       email: '',
@@ -72,7 +73,7 @@ export default function ReuqestOffer() {
         <div className="py-[90px]">
 
           <div className="px-6 lg:px-8">
-            <div className="relative mx-auto max-w-[37.5rem] text-center pt-10 lg:pt-20 pb-2 lg:pb-8">
+            <div className="relative mx-auto max-w-[37.5rem] text-center pt-10 lg:pt-20 pb-8 lg:pb-12">
               <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Angebot einholen</h1>
             </div>
           </div>
@@ -82,9 +83,61 @@ export default function ReuqestOffer() {
 
               <form action="/api/request-offer" method="POST" encType="multipart/form-data" onSubmit={formik.handleSubmit}>
 
+                <div>
+                  <label className="block text-xl font-bold text-slate-800 mb-2">
+                    Service-/Reinigungsart
+                  </label>
+                  <div className="flex flex-col gap-2">
+                    <div className="flex items-center">
+                      <input
+                        id="type-1"
+                        type="radio"
+                        value="Reinigung Ablufthaube"
+                        name="type"
+                        className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                        checked={formik.values.type == 'Reinigung Ablufthaube'}
+                        onChange={() => formik.setFieldValue('type', 'Reinigung Ablufthaube')} />
+                      <label htmlFor="type-1" className="ml-2 text-sm font-medium text-gray-900">Reinigung Ablufthaube</label>
+                    </div>
+                    <div className="flex items-center">
+                      <input
+                        id="type-2"
+                        type="radio"
+                        value="Reinigung Abluftkanal"
+                        name="type"
+                        className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                        checked={formik.values.type == 'Reinigung Abluftkanal'}
+                        onChange={() => formik.setFieldValue('type', 'Reinigung Abluftkanal')} />
+                      <label htmlFor="type-2" className="ml-2 text-sm font-medium text-gray-900">Reinigung Abluftkanal</label>
+                    </div>
+                    <div className="flex items-center">
+                      <input
+                        id="type-3"
+                        type="radio"
+                        value="Reinigung Abluftmotor (Demontage und Montage)"
+                        name="type"
+                        className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                        checked={formik.values.type == 'Reinigung Abluftmotor (Demontage und Montage)'}
+                        onChange={() => formik.setFieldValue('type', 'Reinigung Abluftmotor (Demontage und Montage)')} />
+                      <label htmlFor="type-3" className="ml-2 text-sm font-medium text-gray-900">Reinigung Abluftmotor (Demontage und Montage)</label>
+                    </div>
+                    <div className="flex items-center">
+                      <input
+                        id="type-4"
+                        type="radio"
+                        value="Montage einer Revisionsklappe"
+                        name="type"
+                        className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
+                        checked={formik.values.type == 'Montage einer Revisionsklappe'}
+                        onChange={() => formik.setFieldValue('type', 'Montage einer Revisionsklappe')} />
+                      <label htmlFor="type-4" className="ml-2 text-sm font-medium text-gray-900">Montage einer Revisionsklappe</label>
+                    </div>
+                  </div>
+                </div>
+
                 <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Ansprechpartner</h2>
                 <div className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-4 items-end">
                     <div>
                       <label htmlFor="company" className="block mb-2 text-sm font-medium text-gray-900">
                         Firmenname
@@ -113,7 +166,7 @@ export default function ReuqestOffer() {
                         required />
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-4 items-end">
                     <div>
                       <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">
                         Mailadresse Kontaktperson<RequiredStar />
@@ -243,7 +296,7 @@ export default function ReuqestOffer() {
                       }} />
                   </div>
                   <div>
-                    <label htmlFor="dehoga" className="block mb-2 text-sm font-medium text-gray-900">
+                    <label className="block mb-2 text-sm font-medium text-gray-900">
                       Sind Sie DEHOGA-Mitglied?
                     </label>
                     <div className="flex gap-4">
