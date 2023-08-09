@@ -146,7 +146,7 @@ export default function ReuqestOffer() {
                         type="text"
                         name="company"
                         id="company"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-3 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
                         placeholder="Der Name Ihres Unternehmens"
                         onChange={formik.handleChange}
                         value={formik.values.company} />
@@ -159,7 +159,7 @@ export default function ReuqestOffer() {
                         type="text"
                         name="name"
                         id="name"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-3"
                         placeholder="Max Mustermann"
                         onChange={formik.handleChange}
                         value={formik.values.name}
@@ -175,7 +175,7 @@ export default function ReuqestOffer() {
                         type="email"
                         name="email"
                         id="email"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-3"
                         placeholder="max@mustermann.de"
                         onChange={formik.handleChange}
                         value={formik.values.email}
@@ -189,7 +189,7 @@ export default function ReuqestOffer() {
                         type="text"
                         name="phone"
                         id="phone"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-3"
                         placeholder="+00491234567890"
                         onChange={formik.handleChange}
                         value={formik.values.phone}
@@ -208,7 +208,7 @@ export default function ReuqestOffer() {
                       type="text"
                       name="street"
                       id="street"
-                      className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                      className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
                       placeholder="Musterstraße 1a"
                       onChange={formik.handleChange}
                       value={formik.values.street}
@@ -223,7 +223,7 @@ export default function ReuqestOffer() {
                         type="text"
                         name="postCode"
                         id="postCode"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-3"
                         placeholder="12"
                         onChange={formik.handleChange}
                         value={formik.values.postCode}
@@ -237,7 +237,7 @@ export default function ReuqestOffer() {
                         type="text"
                         name="location"
                         id="location"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-3"
                         placeholder="Der Name ihres Wohnortes"
                         onChange={formik.handleChange}
                         value={formik.values.location}
@@ -258,7 +258,7 @@ export default function ReuqestOffer() {
                         name="length"
                         id="length"
                         min="0"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-3"
                         placeholder="100"
                         onChange={formik.handleChange}
                         value={formik.values.length}
@@ -273,7 +273,7 @@ export default function ReuqestOffer() {
                         name="width"
                         id="width"
                         min="0"
-                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
+                        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-3"
                         placeholder="100"
                         onChange={formik.handleChange}
                         value={formik.values.width}
@@ -288,7 +288,7 @@ export default function ReuqestOffer() {
                       type="file"
                       name="pictures"
                       id="pictures"
-                      className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                      className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
                       placeholder="Musterstraße 1a"
                       multiple={true}
                       onChange={(e: any) => {
@@ -333,7 +333,7 @@ export default function ReuqestOffer() {
                     <textarea
                       name="message"
                       id="message"
-                      className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                      className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
                       placeholder="Message"
                       onChange={formik.handleChange}
                       value={formik.values.message}></textarea>
@@ -343,7 +343,7 @@ export default function ReuqestOffer() {
                     <select
                       name="referer"
                       id="referer"
-                      className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                      className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
                       onChange={formik.handleChange}
                       value={formik.values.referer}
                       required>
@@ -371,7 +371,7 @@ export default function ReuqestOffer() {
 
                 <button
                   type="submit"
-                  className="inline-flex py-3 px-5 mt-8 text-sm font-medium text-center text-white rounded-lg bg-indigo-700 sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 disabled:bg-indigo-400 disabled:cursor-not-allowed"
+                  className="inline-flex py-3 px-5 mt-8 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 disabled:bg-primary-400 disabled:cursor-not-allowed"
                   disabled={formik.isSubmitting}>
                   {formik.isSubmitting && <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
