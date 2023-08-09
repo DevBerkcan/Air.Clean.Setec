@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
         <div className="py-[90px]">
 
           <div className="px-6 lg:px-8">
-            <div className="relative mx-auto max-w-[37.5rem] text-center pt-10 lg:pt-20 pb-2 lg:pb-8">
+            <div className="relative mx-auto max-w-[37.5rem] text-center pt-14 lg:pt-20 pb-2 lg:pb-8">
               <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Impressum</h1>
               <p className="mt-4 text-base leading-7 text-slate-600">Zuletzt aktualisiert am 29. Juni 2023</p>
             </div>
