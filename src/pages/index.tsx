@@ -12,7 +12,7 @@ export default function Index() {
     <>
 
       <Head>
-        <title>Air Clean</title>
+        <title>AirClean VS</title>
       </Head>
 
       <MainLayout scrollEffect={false}>

@@ -11,7 +11,7 @@ const navigation = [
   { name: 'Angebot einholen', href: '/request-offer' },
   { name: 'Home', href: '/#home' },
   { name: 'Über uns', href: '/#about' },
-  { name: 'Leistungen', href: '/#services' },
+  { name: 'Leistung', href: '/#services' },
 ]
 
 const Header: any = ({ scrollEffect }: any) => {
@@ -26,7 +26,7 @@ const Header: any = ({ scrollEffect }: any) => {
           <div className="flex lg:flex-1">
             <Link href="/#home" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
-              <Image src={!scrollEffect || scroll > 40 ? logo : logoWhite} className="duration-100" alt="Air Clean" />
+              <Image src={!scrollEffect || scroll > 40 ? logo : logoWhite} className="duration-100" alt="AirClean VS" />
             </Link>
           </div>
           <div className="flex-grow lg:hidden"></div>
@@ -64,7 +64,7 @@ const Header: any = ({ scrollEffect }: any) => {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">AK</span>
-              <Image src={logo} className="duration-100" alt="Air Clean" />
+              <Image src={logo} className="duration-100" alt="AirClean VS" />
             </a>
             <button
               type="button"

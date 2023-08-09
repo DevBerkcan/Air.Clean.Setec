@@ -13,17 +13,17 @@ const HeroSection: any = () => {
             <div className="bg-black bg-opacity-80 absolute top-0 left-0 w-full h-full z-10"></div>
             <div className="max-w-2xl mx-auto">
               <div className="relative text-center z-20">
-                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                  Experience Pure Air with Our Air Cleaning Solutions!
+                <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+                  Experten für die professionelle Reinigung von raumlufttechnischen Anlagen in Industrie und Gastronomie-Küchen.
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-200">
-                  Clean Air, Happy Life - Embrace a Breath of Freshness!
+                  Küchenabluftreinigung – Wo Genuss auf Sauberkeit trifft und Innovation die Luft erfrischt.
                 </p>
                 <div className="mt-10 flex items-center justify-center flex-wrap gap-x-6 gap-y-4">
                   <a
                     href="#services"
                     className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    Unsere Leistungen
+                    Zur Küchenabluftreinigung
                   </a>
                   <a href="#about" className="text-base font-semibold leading-7 text-white">
                     Erfahre mehr über uns <span aria-hidden="true">→</span>

@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>Air Clean - Datenschutzerklärung</title>
+        <title>Datenschutzerklärung - AirClean VS</title>
       </Head>
 
       <MainLayout>
@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
               <p className="my-4">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
               <p className="my-4">
                 Aylin Gözdas<br />
-                Air Clean<br />
+                AirClean VS<br />
                 Buschstraße 46<br />
                 44866 Bochum<br />
               </p>

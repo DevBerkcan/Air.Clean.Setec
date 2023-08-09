@@ -64,7 +64,7 @@ export default function ReuqestOffer() {
   return (
     <>
       <Head>
-        <title>Air Clean - Angebot einholen</title>
+        <title>Angebot einholen - AirClean VS</title>
       </Head>
 
       <MainLayout>

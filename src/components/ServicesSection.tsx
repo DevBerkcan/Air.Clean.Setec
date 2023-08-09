@@ -27,7 +27,7 @@ const ServicesSection: any = () => {
             </ImgComparisonSlider>
           </div>
           <div>
-            <h2 className="mb-2 lg:mb-4 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Our Services</h2>
+            <h2 className="mb-2 lg:mb-4 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Küchenabluftreinigung</h2>
             <p className="mb-6 text-md leading-[28px] text-gray-600">
               Unregelmäßig gereinigte Küchenabluftanlagen können nicht nur zu einer schlechten
               Luftzirkulation in Küchen und gastronomischen Einrichtungen führen, sondern auch ein

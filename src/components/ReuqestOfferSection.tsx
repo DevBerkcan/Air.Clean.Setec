@@ -10,10 +10,12 @@ const ReuqestOfferSection: any = () => {
 
           <IconLogo />
 
-          <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Convinced?</h2>
+          <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">
+            Haben wir Ihr Interesse geweckt?
+          </h2>
           <div className="mx-auto max-w-2xl">
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Get your individual offer from us.
+              Erhalten Sie Ihr individuelles Angebot von uns.
             </p>
             <Link href="/request-offer" className="inline-flex py-3 px-5 mt-6 text-sm font-medium text-center text-white rounded-lg bg-indigo-700 sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300">
               Angebot Einholen

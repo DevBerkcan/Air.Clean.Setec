@@ -10,19 +10,28 @@ const Footer: any = () => {
 
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="#" className="flex items-center">
-              <Image src={logo} className="w-[160px] mr-3" alt="Air Clean" />
-            </a>
+            <ul className="text-gray-600">
+              <li className="mb-4">
+                <a href="#" className="flex items-center">
+                  <Image src={logo} className="w-[160px] mr-3" alt="AirClean VS" />
+                </a>
+              </li>
+              <li>AirClean VS</li>
+              <li>Am Martinszehnten 3</li>
+              <li>60437 Frankfurt am Main</li>
+              <li>069 - 34 86 88 61</li>
+              <li>info@airclean-vs.de</li>
+            </ul>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Links</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
-                  <a href="#services" className="hover:underline">Leistungen</a>
+                  <a href="#services" className="hover:underline">Leistung</a>
                 </li>
                 <li>
-                  <Link href="/request-offer" className="hover:underline">Angebot Einholen</Link>
+                  <Link href="/request-offer" className="hover:underline">Angebot einholen</Link>
                 </li>
               </ul>
             </div>
@@ -30,7 +39,7 @@ const Footer: any = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Folge uns auf</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
-                  <a href="https://instagram.com/akdienste" target="_blank" rel="noreferrer" className="hover:underline">Instagram</a>
+                  <a href="https://instagram.com/akdienste" target="_blank" rel="noreferrer" className="hover:underline">Linkedin</a>
                 </li>
               </ul>
             </div>
@@ -43,6 +52,9 @@ const Footer: any = () => {
                 <li>
                   <Link href="/data-protection" className="hover:underline">Datenschutzerklärung</Link>
                 </li>
+                <li>
+                  <Link href="/data-protection" className="hover:underline">AGB</Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -52,7 +64,7 @@ const Footer: any = () => {
 
         <div className="grid gap-y-2 grid-cols-1 md:grid-cols-3">
           <span className="text-sm text-gray-500 text-center md:text-start">
-            © 2023 <a href="#" className="hover:underline">Air Clean™</a>. All Rights Reserved.
+            © 2023 <a href="#" className="hover:underline">AirClean VS™</a>. All Rights Reserved.
           </span>
           <span className="text-sm text-gray-500 text-center">
             Designed by <a href="https://gentle-webdesign.de/"
