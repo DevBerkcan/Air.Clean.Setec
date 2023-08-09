@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import MainLayout from '@/layouts/MainLayout'
+import RequiredStar from '@/components/RequiredStar'
 import { useState } from 'react'
 import { useFormik } from 'formik'
 import axios from 'axios'
@@ -99,7 +100,7 @@ export default function ReuqestOffer() {
                     </div>
                     <div>
                       <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900">
-                        Name Kontaktperson<span className="text-red-600 mx-1">*</span>
+                        Name Kontaktperson<RequiredStar />
                       </label>
                       <input
                         type="text"
@@ -115,21 +116,21 @@ export default function ReuqestOffer() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">
-                        Mailadresse Kontaktperson<span className="text-red-600 mx-1">*</span>
+                        Mailadresse Kontaktperson<RequiredStar />
                       </label>
                       <input
                         type="email"
                         name="email"
                         id="email"
                         className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
-                        placeholder="email@gentle-webdesign.de"
+                        placeholder="max@mustermann.de"
                         onChange={formik.handleChange}
                         value={formik.values.email}
                         required />
                     </div>
                     <div>
                       <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900">
-                        Telefonnummer<span className="text-red-600 mx-1">*</span>
+                        Telefonnummer<RequiredStar />
                       </label>
                       <input
                         type="text"
@@ -148,7 +149,7 @@ export default function ReuqestOffer() {
                 <div className="space-y-4">
                   <div>
                     <label htmlFor="street" className="block mb-2 text-sm font-medium text-gray-900">
-                      Straße & Hausnr.<span className="text-red-600 mx-1">*</span>
+                      Straße & Hausnr.<RequiredStar />
                     </label>
                     <input
                       type="text"
@@ -163,7 +164,7 @@ export default function ReuqestOffer() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="postCode" className="block mb-2 text-sm font-medium text-gray-900">
-                        PLZ<span className="text-red-600 mx-1">*</span>
+                        PLZ<RequiredStar />
                       </label>
                       <input
                         type="text"
@@ -177,7 +178,7 @@ export default function ReuqestOffer() {
                     </div>
                     <div>
                       <label htmlFor="location" className="block mb-2 text-sm font-medium text-gray-900">
-                        Ort<span className="text-red-600 mx-1">*</span>
+                        Ort<RequiredStar />
                       </label>
                       <input
                         type="text"
@@ -197,12 +198,13 @@ export default function ReuqestOffer() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="length" className="block mb-2 text-sm font-medium text-gray-900">
-                        Länge der Anlage in m<span className="text-red-600 mx-1">*</span>
+                        Länge der Anlage in m<RequiredStar />
                       </label>
                       <input
                         type="number"
                         name="length"
                         id="length"
+                        min="0"
                         className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
                         placeholder="100"
                         onChange={formik.handleChange}
@@ -211,12 +213,13 @@ export default function ReuqestOffer() {
                     </div>
                     <div>
                       <label htmlFor="width" className="block mb-2 text-sm font-medium text-gray-900">
-                        Breite der Anlage in m<span className="text-red-600 mx-1">*</span>
+                        Breite der Anlage in m<RequiredStar />
                       </label>
                       <input
                         type="number"
                         name="width"
                         id="width"
+                        min="0"
                         className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-3"
                         placeholder="100"
                         onChange={formik.handleChange}
@@ -311,7 +314,7 @@ export default function ReuqestOffer() {
                   </label>
                 </div>
 
-                <p className="mt-6 text-sm text-gray-600">Hinweis: Felder, die mit einem roten Stern (<span className="text-red-600 mx-1">*</span>) gekennzeichnet sind, sind erforderlich, um Maric Airclean über die Website kontaktieren zu können.</p>
+                <p className="mt-6 text-sm text-gray-600">Hinweis: Felder, die mit einem roten Stern (<RequiredStar />) gekennzeichnet sind, sind erforderlich, um Maric Airclean über die Website kontaktieren zu können.</p>
 
                 <button
                   type="submit"
