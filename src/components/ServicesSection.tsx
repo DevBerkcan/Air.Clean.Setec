@@ -9,7 +9,7 @@ import after2 from '@/assets/images/cleaning-comparison/after2.jpeg'
 const ServicesSection: any = () => {
 
   return (
-    <section className="px-6 py-20" id="services">
+    <section className="px-6 py-28" id="services">
 
       <IconLogo />
       <div className="flex">
@@ -72,7 +72,7 @@ const ServicesSection: any = () => {
         {/* Legal Situation */}
         <div className="max-w-[600px] mx-auto lg:text-center">
           <h2 className="mb-2 lg:mb-4 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">
-            <svg className="inline-flex w-6 h-6 lg:w-8 lg:h-8 text-red-500 mx-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="inline-flex w-6 h-6 lg:w-8 lg:h-8 text-red-500 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
             </svg>
             Rechtslage zur Küchenabluftreinigung
