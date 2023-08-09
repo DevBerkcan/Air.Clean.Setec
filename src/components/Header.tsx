@@ -24,9 +24,9 @@ const Header: any = ({ scrollEffect }: any) => {
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="container flex items-center">
           <div className="flex lg:flex-1">
-            <Link href="/#home" className="-m-1.5 p-1.5">
-              <span className="sr-only">AK</span>
+            <Link href="/#home" className="-m-1.5 p-1.5 text-end top-0.5 relative">
               <Image src={!scrollEffect || scroll > 40 ? logo : logoWhite} className="duration-100" alt="AirClean VS" />
+              <span className="text-xs text-gray-600">Zertifiziert nach VDI 2052</span>
             </Link>
           </div>
           <div className="flex-grow lg:hidden"></div>
@@ -63,7 +63,6 @@ const Header: any = ({ scrollEffect }: any) => {
         <Dialog.Panel className={"fixed inset-0 z-30 overflow-y-auto bg-white px-6 py-6 lg:hidden " + (!scrollEffect || scroll > 40 ? 'py-4' : '')}>
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">AK</span>
               <Image src={logo} className="duration-100" alt="AirClean VS" />
             </a>
             <button
