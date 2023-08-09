@@ -30,14 +30,27 @@ export default function ReuqestOffer() {
       street: '',
       postCode: '',
       location: '',
-      dehoga: '',
       length: '',
       width: '',
+      pictures: '',
+      dehoga: '',
       message: '',
       referer: '',
     },
-    onSubmit: values => {
-      axios.post('/api/request-offer', values).then(() => {
+    onSubmit: (values: any) => {
+
+      const formData: any = new FormData()
+
+      for (const key in values) {
+        formData.append(key, values[key])
+      }
+      for (const key in values.pictures) {
+        formData.append('pictures[]', values.pictures[key])
+      }
+
+      axios.post('/api/request-offer', formData, {
+        headers: { 'content-type': 'multipart/form-data' }
+      }).then(() => {
         showAlert('Ihr Angebot wurde erfolgreich an uns gesendet, wir werden Ihnen so schnell wie möglich antworten.', 'success')
       }).catch((e) => {
         console.log(e)
@@ -66,7 +79,7 @@ export default function ReuqestOffer() {
           <div className="relative px-6 lg:px-8">
             <div className="mx-auto max-w-[40rem]">
 
-              <form action="/api/request-offer" method="POST" onSubmit={formik.handleSubmit}>
+              <form action="/api/request-offer" method="POST" encType="multipart/form-data" onSubmit={formik.handleSubmit}>
 
                 <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Ansprechpartner</h2>
                 <div className="space-y-4">
@@ -184,7 +197,7 @@ export default function ReuqestOffer() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="length" className="block mb-2 text-sm font-medium text-gray-900">
-                        Länge der Anlage in cm<span className="text-red-600 mx-1">*</span>
+                        Länge der Anlage in m<span className="text-red-600 mx-1">*</span>
                       </label>
                       <input
                         type="number"
@@ -198,7 +211,7 @@ export default function ReuqestOffer() {
                     </div>
                     <div>
                       <label htmlFor="width" className="block mb-2 text-sm font-medium text-gray-900">
-                        Breite der Anlage in cm<span className="text-red-600 mx-1">*</span>
+                        Breite der Anlage in m<span className="text-red-600 mx-1">*</span>
                       </label>
                       <input
                         type="number"
@@ -210,6 +223,21 @@ export default function ReuqestOffer() {
                         value={formik.values.width}
                         required />
                     </div>
+                  </div>
+                  <div>
+                    <label htmlFor="pictures" className="block mb-2 text-sm font-medium text-gray-900">
+                      Bilder der Anlage
+                    </label>
+                    <input
+                      type="file"
+                      name="pictures"
+                      id="pictures"
+                      className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                      placeholder="Musterstraße 1a"
+                      multiple={true}
+                      onChange={(e: any) => {
+                        formik.setFieldValue('pictures', e.currentTarget.files);
+                      }} />
                   </div>
                   <div>
                     <label htmlFor="dehoga" className="block mb-2 text-sm font-medium text-gray-900">
