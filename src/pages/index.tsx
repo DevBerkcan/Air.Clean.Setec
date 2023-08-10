@@ -15,7 +15,7 @@ export default function Index() {
         <title>AirClean VS</title>
       </Head>
 
-      <MainLayout scrollEffect={false}>
+      <MainLayout scrollEffect={true}>
 
         {/* Hero */}
         <HeroSection />

@@ -19,21 +19,23 @@ const Header: any = ({ scrollEffect }: any) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { scroll } = useScroll()
 
+  const active = !scrollEffect || scroll > 40
+
   return (
-    <header className={"fixed w-full left-0 top-0 px-6 py-6 lg:px-8 z-30 duration-100 " + (!scrollEffect || scroll > 40 ? 'bg-white/95 backdrop-blur-md shadow-xl shadow-black/[5%] py-4' : '')}>
+    <header className={"fixed w-full left-0 top-0 px-6 py-6 lg:px-8 z-30 duration-100 " + (active ? 'bg-white/95 backdrop-blur-md shadow-xl shadow-black/[5%] py-4' : '')}>
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="container flex items-center">
           <div className="flex lg:flex-1">
-            <Link href="/#home" className="-m-1.5 p-1.5 text-end top-0.5 relative">
-              <Image src={!scrollEffect || scroll > 40 ? logo : logoWhite} className="duration-100" alt="AirClean VS" />
-              <span className="text-xs text-gray-600">Zertifiziert nach VDI 2052</span>
+            <Link href="/#home" className="-m-1.5 p-1.5 text-end top-1 relative">
+              <Image src={active ? logo : logoWhite} className="duration-100" alt="AirClean VS" />
+              <span className={"relative -top-1 text-[11px] " + (active ? 'text-gray-600' : 'text-white')}>Zertifiziert nach VDI 2052</span>
             </Link>
           </div>
           <div className="flex-grow lg:hidden"></div>
           <div className="flex lg:hidden">
             <button
               type="button"
-              className={"-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 " + (!scrollEffect || scroll > 40 ? 'text-gray-700' : 'text-white')}
+              className={"-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 " + (active ? 'text-gray-700' : 'text-white')}
               onClick={() => setMobileMenuOpen(true)}>
               <span className="sr-only">Öffne Menü</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -41,14 +43,14 @@ const Header: any = ({ scrollEffect }: any) => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} href={item.href} className={"text-sm font-semibold leading-6 " + (!scrollEffect || scroll > 40 ? 'text-gray-900' : 'text-white')}>
+              <Link key={item.name} href={item.href} className={"text-sm font-semibold leading-6 " + (active ? 'text-gray-900' : 'text-white')}>
                 {item.name}
               </Link>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className={"inline-flex items-center text-sm font-semibold leading-6 " + (!scrollEffect || scroll > 40 ? 'text-gray-900 stroke-black' : 'text-white stroke-white')}>
-            069 - 34 86 88 61
+            <a href="#" className={"inline-flex items-center text-sm font-semibold leading-6 " + (active ? 'text-gray-900 stroke-black' : 'text-white stroke-white')}>
+              069 - 34 86 88 61
               <svg stroke="inherit" className="inline ml-2" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g stroke="inherit">
                   <path id="Vector" d="M9.50246 4.25722C9.19873 3.4979 8.46332 3 7.64551 3H4.89474C3.8483 3 3 3.8481 3 4.89453C3 13.7892 10.2108 21 19.1055 21C20.1519 21 21 20.1516 21 19.1052L21.0005 16.354C21.0005 15.5361 20.5027 14.8009 19.7434 14.4971L17.1069 13.4429C16.4249 13.1701 15.6483 13.2929 15.0839 13.7632L14.4035 14.3307C13.6089 14.9929 12.4396 14.9402 11.7082 14.2088L9.79222 12.2911C9.06079 11.5596 9.00673 10.3913 9.66895 9.59668L10.2363 8.9163C10.7066 8.35195 10.8305 7.57516 10.5577 6.89309L9.50246 4.25722Z" stroke="inherit" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -60,7 +62,7 @@ const Header: any = ({ scrollEffect }: any) => {
       </nav>
 
       <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <Dialog.Panel className={"fixed inset-0 z-30 overflow-y-auto bg-white px-6 py-6 lg:hidden " + (!scrollEffect || scroll > 40 ? 'py-4' : '')}>
+        <Dialog.Panel className={"fixed inset-0 z-30 overflow-y-auto bg-white px-6 py-6 lg:hidden " + (active ? 'py-4' : '')}>
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5 text-end top-0.5 relative">
               <Image src={logo} className="duration-100" alt="AirClean VS" />
