@@ -248,7 +248,7 @@ export default function ReuqestOffer() {
 
                 <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Angaben zur Küchenabluftanlage</h2>
                 <div className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-4 items-end">
                     <div>
                       <label htmlFor="length" className="block mb-2 text-sm font-medium text-gray-900">
                         Länge der Anlage in m<RequiredStar />
