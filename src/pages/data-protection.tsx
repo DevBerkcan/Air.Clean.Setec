@@ -69,9 +69,9 @@ export default function PrivacyPolicy() {
               <h2 className="text-2xl font-bold text-slate-800 mt-10 mb-4">AirClean VS</h2>
               <p className="my-4">
                 Vertreten durch ihren Geschäftsführer<br />
-                Herrn Stephan Bilo<br />
-                Merlenforst 2<br />
-                42799 Leichlingen
+                Herrn Viktor Selmanaj<br />
+                Am Martinszehnten 3<br />
+                60437 Frankfurt am Main
               </p>
 
               <h1 className="text-3xl font-bold text-slate-800 mt-10 mb-4">3. Cookies</h1>
