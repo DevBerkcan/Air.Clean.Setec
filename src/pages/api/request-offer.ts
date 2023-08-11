@@ -57,7 +57,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 
   const data = {
     from: '"AirClean VS" <airclean@gmail.com>',
-    to: process.env.SEND_OFFER_MAIL_TO,
+    to: process.env.REQUEST_OFFER_MAIL_TO,
     subject: "AirClean VS - Angebotsanfrage",
     html: htmlTemplate,
     attachments
