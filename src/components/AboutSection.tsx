@@ -3,7 +3,7 @@ import IconLogo from "./IconLogo"
 const AboutSection: any = () => {
 
   return (
-    <section className="bg-[url('/background2.jpg')] bg-cover bg-center" id="about">
+    <section className="bg-[url('/background2.jpg')] bg-cover bg-center" id="überuns">
       <div className="px-6 py-20 bg-white/20">
         <div className="container text-center py-8 lg:py-16">
 

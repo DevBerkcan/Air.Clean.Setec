@@ -251,7 +251,7 @@ export default function ReuqestOffer() {
                   <div className="grid grid-cols-2 gap-4 items-end">
                     <div>
                       <label htmlFor="length" className="block mb-2 text-sm font-medium text-gray-900">
-                        Länge der Anlage in m<RequiredStar />
+                        Länge der Abluftkanal in m<RequiredStar />
                       </label>
                       <input
                         type="number"
@@ -266,7 +266,7 @@ export default function ReuqestOffer() {
                     </div>
                     <div>
                       <label htmlFor="width" className="block mb-2 text-sm font-medium text-gray-900">
-                        Breite der Anlage in m<RequiredStar />
+                        Breite der Abluftkanal in m<RequiredStar />
                       </label>
                       <input
                         type="number"

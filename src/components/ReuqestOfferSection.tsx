@@ -17,7 +17,7 @@ const ReuqestOfferSection: any = () => {
             <p className="mt-2 text-lg leading-8 text-gray-600">
               Erhalten Sie Ihr individuelles Angebot von uns.
             </p>
-            <Link href="/request-offer" className="inline-flex py-3 px-5 mt-6 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">
+            <Link href="/angebot-einholen" className="inline-flex py-3 px-5 mt-6 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">
               Angebot einholen
             </Link>
           </div>

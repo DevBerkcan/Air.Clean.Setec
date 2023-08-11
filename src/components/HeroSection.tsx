@@ -1,7 +1,7 @@
 const HeroSection: any = () => {
 
   return (
-    <section className="relative bg-[url('/pipes.png')] bg-cover bg-center" id="home">
+    <section className="relative bg-[url('/pipes.png')] bg-cover bg-center" id="startseite">
 
       <div className="block lg:hidden bg-black/70 absolute top-0 left-0 w-full h-full z-10"></div>
       <div className="hidden lg:block bg-gradient-to-r from-black/80 via-black/70 to-transparent absolute top-0 left-0 w-full h-full z-10"></div>
@@ -19,11 +19,11 @@ const HeroSection: any = () => {
               </p>
               <div className="mt-10 flex items-center justify-center flex-wrap gap-x-6 gap-y-4">
                 <a
-                  href="#services"
+                  href="#leistung"
                   className="rounded-md bg-primary-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600">
                   Zur Küchenabluftreinigung
                 </a>
-                <a href="#about" className="text-base font-semibold leading-7 text-white">
+                <a href="#überuns" className="text-base font-semibold leading-7 text-white">
                   Erfahre mehr über uns <span aria-hidden="true">→</span>
                 </a>
               </div>

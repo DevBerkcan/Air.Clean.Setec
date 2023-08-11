@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import MainLayout from '@/layouts/MainLayout'
 
-export default function PrivacyPolicy() {
+export default function DataProtection() {
 
   return (
     <>

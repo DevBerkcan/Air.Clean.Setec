@@ -8,10 +8,10 @@ import useScroll from '@/hooks/useScroll'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'Angebot einholen', href: '/request-offer' },
-  { name: 'Home', href: '/#home' },
-  { name: 'Über uns', href: '/#about' },
-  { name: 'Leistung', href: '/#services' },
+  { name: 'Angebot einholen', href: '/angebot-einholen' },
+  { name: 'Home', href: '/#startseite' },
+  { name: 'Über uns', href: '/#überuns' },
+  { name: 'Leistung', href: '/#leistung' },
 ]
 
 const Header: any = ({ scrollEffect }: any) => {
@@ -26,7 +26,7 @@ const Header: any = ({ scrollEffect }: any) => {
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="container flex items-center">
           <div className="flex lg:flex-1">
-            <Link href="/#home" className="-m-1.5 p-1.5 text-end top-1 relative">
+            <Link href="/#startseite" className="-m-1.5 p-1.5 text-end top-1 relative">
               <Image src={active ? logo : logoWhite} className="duration-100" alt="AirClean VS" />
               <span className={"relative -top-1 text-[11px] " + (active ? 'text-gray-600' : 'text-white')}>Zertifiziert nach VDI 2052</span>
             </Link>

@@ -9,7 +9,7 @@ import after2 from '@/assets/images/cleaning-comparison/after2.jpg'
 const ServicesSection: any = () => {
 
   return (
-    <section className="px-6 py-28" id="services">
+    <section className="px-6 py-28" id="leistung">
 
       <IconLogo />
       <div className="flex">

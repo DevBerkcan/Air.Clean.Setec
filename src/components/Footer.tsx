@@ -28,10 +28,10 @@ const Footer: any = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Links</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
-                  <a href="#services" className="hover:underline">Leistung</a>
+                  <a href="#leistung" className="hover:underline">Leistung</a>
                 </li>
                 <li className="mb-4">
-                  <Link href="/request-offer" className="hover:underline">Angebot einholen</Link>
+                  <Link href="/angebot-einholen" className="hover:underline">Angebot einholen</Link>
                 </li>
               </ul>
             </div>
@@ -47,13 +47,13 @@ const Footer: any = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Rechtliches</h2>
               <ul className="text-gray-600">
                 <li className="mb-4">
-                  <Link href="/privacy-policy" className="hover:underline">Impressum</Link>
+                  <Link href="/impressum" className="hover:underline">Impressum</Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="/data-protection" className="hover:underline">Datenschutzerklärung</Link>
+                  <Link href="/datenschutzerklaerung" className="hover:underline">Datenschutzerklärung</Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="/conditions" className="hover:underline">AGB</Link>
+                  <Link href="/agb" className="hover:underline">AGB</Link>
                 </li>
               </ul>
             </div>
