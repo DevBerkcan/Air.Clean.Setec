@@ -19,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   const form = formidable({ multiples: true })
 
   const formData = new Promise((resolve, reject) => {
-    form.parse(req, async (err, fields, files) => {
+    form.parse(req, (err, fields, files) => {
       if (err) {
         reject('error')
       }
@@ -41,7 +41,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     'Ort': fields.location[0],
     'Länge der Anlage in m': fields.length[0],
     'Breite der Anlage in m': fields.width[0],
-    'Sind Sie DEHOGA-Mitglied?': fields.dehoga[0],
     'Ihre Nachricht an uns': fields.message[0],
     'Wie sind Sie auf uns aufmerksam geworden?': fields.referer[0],
   }

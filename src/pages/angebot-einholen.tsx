@@ -35,7 +35,6 @@ export default function ReuqestOffer() {
       length: '',
       width: '',
       pictures: '',
-      dehoga: '',
       message: '',
       referer: '',
     },
@@ -294,36 +293,7 @@ export default function ReuqestOffer() {
                       onChange={(e: any) => {
                         formik.setFieldValue('pictures', e.currentTarget.files);
                       }} />
-                  </div>
-                  <div>
-                    <label className="block mb-2 text-sm font-medium text-gray-900">
-                      Sind Sie DEHOGA-Mitglied?
-                    </label>
-                    <div className="flex gap-4">
-                      <div className="flex items-center">
-                        <input
-                          id="dehoga-yes"
-                          type="radio"
-                          value="ja"
-                          name="dehoga"
-                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
-                          checked={formik.values.dehoga == 'ja'}
-                          onChange={() => formik.setFieldValue('dehoga', 'ja')} />
-                        <label htmlFor="dehoga-yes" className="ml-2 text-sm font-medium text-gray-900">ja</label>
-                      </div>
-                      <div className="flex items-center">
-                        <input
-                          id="dehoga-no"
-                          type="radio"
-                          value="nein"
-                          name="dehoga"
-                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
-                          checked={formik.values.dehoga == 'nein'}
-                          onChange={() => formik.setFieldValue('dehoga', 'nein')} />
-                        <label htmlFor="dehoga-no" className="ml-2 text-sm font-medium text-gray-900">nein</label>
-                      </div>
-                    </div>
-                  </div>
+                  </div>               
                 </div>
 
                 <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Sonstiges</h2>
