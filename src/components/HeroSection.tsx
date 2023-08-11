@@ -12,7 +12,7 @@ const HeroSection: any = () => {
           <div className="max-w-2xl mx-auto">
             <div className="relative text-center z-20">
               <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
-                Experten für die professionelle Reinigung von raumlufttechnischen Anlagen in Industrie und Gastronomie-Küchen.
+                Experten für die professionelle Reinigung von Abluftsystemen in Industrie und Gastronomie - Küchen
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-200">
                 Küchenabluftreinigung – Wo Genuss auf Sauberkeit trifft und Innovation die Luft erfrischt.
