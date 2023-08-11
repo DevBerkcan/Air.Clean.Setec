@@ -53,7 +53,7 @@ export default function ReuqestOffer() {
       axios.post('/api/request-offer', formData, {
         headers: { 'content-type': 'multipart/form-data' }
       }).then(() => {
-        showAlert('Ihr Angebot wurde erfolgreich an uns gesendet, wir werden Ihnen so schnell wie möglich antworten.', 'success')
+        showAlert('Ihr Anfrage wurde erfolgreich an uns gesendet, wir werden Ihnen so schnell wie möglich antworten.', 'success')
       }).catch((e) => {
         console.log(e)
         showAlert('Fehler beim Senden. Bitte versuchen Sie es erneut.', 'error')
@@ -367,7 +367,7 @@ export default function ReuqestOffer() {
                   </label>
                 </div>
 
-                <p className="mt-6 text-sm text-gray-600">Hinweis: Felder, die mit einem roten Stern (<RequiredStar />) gekennzeichnet sind, sind erforderlich, um Maric Airclean über die Website kontaktieren zu können.</p>
+                <p className="mt-6 text-sm text-gray-600">Hinweis: Felder, die mit einem roten Stern (<RequiredStar />) gekennzeichnet sind, sind erforderlich, um AirClean VS über die Website kontaktieren zu können.</p>
 
                 <button
                   type="submit"
