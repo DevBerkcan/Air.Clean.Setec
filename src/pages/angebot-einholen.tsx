@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import MainLayout from '@/layouts/MainLayout'
 import RequiredStar from '@/components/RequiredStar'
-import { useState } from 'react'
-import { useFormik } from 'formik'
+import MainLayout from '@/layouts/MainLayout'
 import axios from 'axios'
+import { useFormik } from 'formik'
+import Head from 'next/head'
+import { useState } from 'react'
 
 export default function ReuqestOffer() {
 
@@ -24,7 +24,7 @@ export default function ReuqestOffer() {
 
   const formik = useFormik({
     initialValues: {
-      type: '',
+      type: [],
       company: '',
       name: '',
       email: '',
@@ -43,7 +43,8 @@ export default function ReuqestOffer() {
       const formData: any = new FormData()
 
       for (const key in values) {
-        formData.append(key, values[key])
+        const value = key == 'type' ? values[key].join(', ') : values[key]
+        formData.append(key, value)
       }
       for (const key in values.pictures) {
         formData.append('pictures[]', values.pictures[key])
@@ -61,6 +62,11 @@ export default function ReuqestOffer() {
       })
     },
   })
+
+  const handleCheckboxChange = (e: any) => {
+    const addOrRemove = (arr: any, item: any) => arr.includes(item) ? arr.filter((i: any) => i !== item) : [...arr, item];
+    formik.setFieldValue('type', addOrRemove(formik.values.type, e.target.value))
+  }
 
   return (
     <>
@@ -90,45 +96,41 @@ export default function ReuqestOffer() {
                     <div className="flex items-center">
                       <input
                         id="type-1"
-                        type="radio"
+                        type="checkbox"
                         value="Reinigung Ablufthaube"
-                        name="type"
+                        name="type1"
                         className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
-                        checked={formik.values.type == 'Reinigung Ablufthaube'}
-                        onChange={() => formik.setFieldValue('type', 'Reinigung Ablufthaube')} />
+                        onChange={(e) => handleCheckboxChange(e)} />
                       <label htmlFor="type-1" className="ml-2 text-sm font-medium text-gray-900">Reinigung Ablufthaube</label>
                     </div>
                     <div className="flex items-center">
                       <input
                         id="type-2"
-                        type="radio"
+                        type="checkbox"
                         value="Reinigung Abluftkanal"
-                        name="type"
+                        name="type2"
                         className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
-                        checked={formik.values.type == 'Reinigung Abluftkanal'}
-                        onChange={() => formik.setFieldValue('type', 'Reinigung Abluftkanal')} />
+                        onChange={(e) => handleCheckboxChange(e)} />
                       <label htmlFor="type-2" className="ml-2 text-sm font-medium text-gray-900">Reinigung Abluftkanal</label>
                     </div>
                     <div className="flex items-center">
                       <input
                         id="type-3"
-                        type="radio"
+                        type="checkbox"
                         value="Reinigung Abluftmotor (Demontage und Montage)"
-                        name="type"
+                        name="type3"
                         className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
-                        checked={formik.values.type == 'Reinigung Abluftmotor (Demontage und Montage)'}
-                        onChange={() => formik.setFieldValue('type', 'Reinigung Abluftmotor (Demontage und Montage)')} />
+                        onChange={(e) => handleCheckboxChange(e)} />
                       <label htmlFor="type-3" className="ml-2 text-sm font-medium text-gray-900">Reinigung Abluftmotor (Demontage und Montage)</label>
                     </div>
                     <div className="flex items-center">
                       <input
                         id="type-4"
-                        type="radio"
+                        type="checkbox"
                         value="Montage einer Revisionsklappe"
-                        name="type"
+                        name="type4"
                         className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
-                        checked={formik.values.type == 'Montage einer Revisionsklappe'}
-                        onChange={() => formik.setFieldValue('type', 'Montage einer Revisionsklappe')} />
+                        onChange={(e) => handleCheckboxChange(e)} />
                       <label htmlFor="type-4" className="ml-2 text-sm font-medium text-gray-900">Montage einer Revisionsklappe</label>
                     </div>
                   </div>
@@ -293,7 +295,7 @@ export default function ReuqestOffer() {
                       onChange={(e: any) => {
                         formik.setFieldValue('pictures', e.currentTarget.files);
                       }} />
-                  </div>               
+                  </div>
                 </div>
 
                 <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Sonstiges</h2>
