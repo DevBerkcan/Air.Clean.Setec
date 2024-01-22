@@ -55,7 +55,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   const htmlTemplate = getHtmlTemplate(templatePath, templateParam)
 
   const data = {
-    from: '"AirClean VS" <airclean@gmail.com>',
+    from: '"AirClean VS" <noreply@airclean-vs.de>',
     to: process.env.REQUEST_OFFER_MAIL_TO,
     subject: "AirClean VS - Angebotsanfrage",
     html: htmlTemplate,
