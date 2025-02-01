@@ -62,17 +62,9 @@ const Footer: any = () => {
 
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
 
-        <div className="grid gap-y-2 grid-cols-1 md:grid-cols-3">
+        <div className="grid gap-y-2 grid-cols-1 md:grid-cols-2">
           <span className="text-sm text-gray-500 text-center md:text-start">
             © 2023 <a href="#" className="hover:underline">AirClean VS™</a>. All Rights Reserved.
-          </span>
-          <span className="text-sm text-gray-500 text-center">
-            Designed by <a href="https://gentle-webdesign.de/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:underline">
-              Gentle Webdesign
-            </a>
           </span>
           <div className="flex space-x-6 justify-center md:justify-end">
             <a href="https://linkedin.com/company/airclean-vs" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-gray-900">
