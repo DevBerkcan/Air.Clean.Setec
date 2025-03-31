@@ -19,7 +19,7 @@ const Footer: any = () => {
               <li>AirClean VS</li>
               <li>Am Martinszehnten 3</li>
               <li>60437 Frankfurt am Main</li>
-              <li>069 - 34 86 88 61</li>
+              <li>+49 1512 2851195</li>
               <li>info@airclean-vs.de</li>
             </ul>
           </div>
