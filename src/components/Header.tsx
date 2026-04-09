@@ -41,7 +41,7 @@ const Header: any = ({ scrollEffect }: any) => {
                 <Image
                   src={active ? logo : logoWhite}
                   className="duration-100 object-contain"
-                  alt="AirClean Setec – Küchenabluftreinigung"
+                  alt="AirClean Setec Logo"
                   width={210}
                   height={40}
                   priority
