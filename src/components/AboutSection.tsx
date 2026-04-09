@@ -14,7 +14,7 @@ const AboutSection: any = () => {
 
           <div className="mx-auto max-w-2xl">
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Sauberkeit und Effizienz stehen bei uns an erster Stelle! Airclean VS bietet erstklassige Reinigungsdienstleistungen für raumlufttechnische Anlagen in Industrie und Gastronomie- Küchen. Vertrauen Sie unserem erfahrenen Team, um die Luftqualität zu verbessern und Ihre Anlagen in Topform zu halten. Kontaktieren Sie uns jetzt für eine professionelle Beratung. Wir freuen uns darauf, Ihnen zu helfen!
+              Sauberkeit und Effizienz stehen bei uns an erster Stelle! AirClean Setec bietet erstklassige Reinigungsdienstleistungen für raumlufttechnische Anlagen in Industrie und Gastronomie-Küchen. Vertrauen Sie unserem erfahrenen Team, um die Luftqualität zu verbessern und Ihre Anlagen in Topform zu halten. Kontaktieren Sie uns jetzt für eine professionelle Beratung. Wir freuen uns darauf, Ihnen zu helfen!
             </p>
           </div>
 

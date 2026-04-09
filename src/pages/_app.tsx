@@ -19,9 +19,13 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <>
       <Head>
-        <meta name="description" content="Experten für die professionelle Reinigung von Abluftsystemen in Industrie und Gastronomie - Küchen" />
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="AirClean Setec" />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
       </Head>
 
       {getLayout(<Component {...pageProps} />)}
