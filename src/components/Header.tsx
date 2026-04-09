@@ -23,11 +23,12 @@ const Header: any = ({ scrollEffect }: any) => {
   return (
     <header
       className={
-        'fixed w-full left-0 top-0 px-6 py-6 lg:px-8 z-30 duration-100 ' +
+        'fixed w-full left-0 top-0 px-6 py-2 lg:px-8 z-30 duration-100 ' +
         (active
-          ? 'bg-white/95 backdrop-blur-md shadow-xl shadow-black/[5%] py-4'
+          ? 'bg-white/95 backdrop-blur-md shadow-xl shadow-black/[5%] py-2'
           : '')
       }
+
     >
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="container flex items-center">

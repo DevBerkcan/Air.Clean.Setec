@@ -80,7 +80,7 @@ export default function Index() {
                 }
               ],
               "sameAs": [
-                "https://linkedin.com/company/airclean-setec"
+                "https://linkedin.com/company/airclean-vs"
               ],
               "priceRange": "$$",
               "areaServed": {

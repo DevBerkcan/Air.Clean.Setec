@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
-import logo from '../assets/images/logo2.png' // NEW: change to your AirClean-Setec turbine logo
-// If you also have a white version and want it later, import logoWhite too.
+import logo from '../assets/images/logo2.png' 
 
 const Footer: any = () => {
   return (
@@ -66,7 +64,7 @@ const Footer: any = () => {
               <ul className="text-gray-600">
                 <li className="mb-4">
                   <a
-                    href="https://linkedin.com/company/airclean-setec"
+                    href="https://linkedin.com/company/airclean-vs"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:underline"
@@ -106,18 +104,18 @@ const Footer: any = () => {
           <span className="text-sm text-gray-500 text-center md:text-start">
             © 2024{' '}
             <Link href="/" className="hover:underline">
-              AirClean-Setec™
+              AirClean Setec™
             </Link>
             . All Rights Reserved.
           </span>
 
           <div className="flex space-x-6 justify-center md:justify-end">
             <a
-              href="https://linkedin.com/company/airclean-setec"
+              href="https://linkedin.com/company/airclean-vs"
               target="_blank"
               rel="noreferrer"
               className="text-gray-500 hover:text-gray-900"
-              aria-label="AirClean-Setec auf LinkedIn"
+              aria-label="AirClean Setec auf LinkedIn"
             >
               <svg
                 className="w-4 h-4"
