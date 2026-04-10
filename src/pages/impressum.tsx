@@ -29,7 +29,6 @@ export default function PrivacyPolicy() {
               <p className="my-2">60437 Frankfurt am Main</p>
               <p className="my-2">Mobil: +49 1512 2851195</p>
               <p className="my-2">E-Mail: info@airclean-setec.de</p>
-              <p className="my-2">Steuer-Nr.: 013/8695/1538</p>
               <p className="my-2">Inhaltlich Verantwortlicher: Feriz Selmanaj (Kontaktdaten siehe oben)</p>
 
               <h2 className="text-xl font-bold text-slate-800 mt-10 mb-4">Haftungsausschluss (Disclaimer) Haftung für Inhalte</h2>

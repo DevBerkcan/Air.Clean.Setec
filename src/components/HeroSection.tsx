@@ -20,7 +20,7 @@ const HeroSection: any = () => {
               <div className="mt-10 flex items-center justify-center flex-wrap gap-x-6 gap-y-4">
                 <a
                   href="#leistung"
-                  className="rounded-md bg-primary-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600">
+                  className="rounded-md bg-[#006ff8] hover:bg-[#0060d9] px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#006ff8]">
                   Zur Küchenabluftreinigung
                 </a>
                 <a href="#überuns" className="text-base font-semibold leading-7 text-white">
