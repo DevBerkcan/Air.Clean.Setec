@@ -102,7 +102,7 @@ const Footer: any = () => {
 
         <div className="grid gap-y-2 grid-cols-1 md:grid-cols-2">
           <span className="text-sm text-gray-500 text-center md:text-start">
-            © 2024{' '}
+            © 2026{' '}
             <Link href="/" className="hover:underline">
               AirClean Setec™
             </Link>

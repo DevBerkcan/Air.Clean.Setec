@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "webmail.airclean-setec.de"
+        }
+      ],
+      "destination": "https://webmail.netcup.net",
+      "permanent": false
+    }
+  ]
+}
