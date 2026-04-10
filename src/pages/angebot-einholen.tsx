@@ -343,7 +343,7 @@ export default function ReuqestOffer() {
 
                 <button
                   type="submit"
-                  className="inline-flex py-3 px-5 mt-8 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 disabled:bg-primary-400 disabled:cursor-not-allowed"
+                  className="inline-flex py-3 px-5 mt-8 text-sm font-medium text-center text-white rounded-lg bg-[#006ff8] hover:bg-[#0060d9] sm:w-fit focus:ring-4 focus:outline-none focus:ring-[#006ff8]/50 disabled:bg-[#006ff8]/50 disabled:cursor-not-allowed"
                   disabled={formik.isSubmitting}>
                   {formik.isSubmitting && <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
