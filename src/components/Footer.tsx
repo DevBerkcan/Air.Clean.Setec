@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../assets/images/logo3.png' 
+import logo from '../assets/images/newlogo.png' 
 
 const Footer: any = () => {
   return (
