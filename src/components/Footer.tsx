@@ -26,8 +26,8 @@ const Footer: any = () => {
               <li>60437 Frankfurt am Main</li>
 
               <li>
-                <a href="tel:+4915122851195" className="hover:underline">
-                  +49 1512 2851195
+                <a href="tel:+4969247547300" className="hover:underline">
+                  +49 69247547300
                 </a>
               </li>
 

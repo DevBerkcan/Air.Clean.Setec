@@ -95,16 +95,16 @@ const Header: any = ({ scrollEffect }: any) => {
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
-              href="tel:+4915122851195"
+              href="tel:+4969247547300"
               className={
                 'inline-flex items-center text-sm font-semibold leading-6 ' +
                 (active
                   ? 'text-gray-900 stroke-black'
                   : 'text-white stroke-white')
               }
-              aria-label="Jetzt anrufen: +49 1512 2851195"
+              aria-label="Jetzt anrufen: +49 69247547300"
             >
-              +49 1512 2851195
+              +49 69247547300
               <svg
                 stroke="inherit"
                 className="inline ml-2"
@@ -179,8 +179,8 @@ const Header: any = ({ scrollEffect }: any) => {
 
               <div className="py-6">
                 <a
-                  href="tel:+4915122851195"
-                  aria-label="Jetzt anrufen: +49 1512 2851195"
+                  href="tel:+4969247547300"
+                  aria-label="Jetzt anrufen: +49 69247547300"
                   className="-mx-3 inline-flex gap-2 rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10 stroke-black"
                 >
                   <svg
@@ -204,7 +204,7 @@ const Header: any = ({ scrollEffect }: any) => {
                       />
                     </g>
                   </svg>
-                  +49 1512 2851195
+                  +49 69247547300
                 </a>
               </div>
             </div>

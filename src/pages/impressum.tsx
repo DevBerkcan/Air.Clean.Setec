@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
               <p className="my-2">AirClean VS</p>
               <p className="my-2">Am Martinszehnten 3</p>
               <p className="my-2">60437 Frankfurt am Main</p>
-              <p className="my-2">Mobil: +49 1512 2851195</p>
+              <p className="my-2">Mobil: +49 69247547300</p>
               <p className="my-2">E-Mail: info@airclean-setec.de</p>
               <p className="my-2">Inhaltlich Verantwortlicher: Feriz Selmanaj (Kontaktdaten siehe oben)</p>
 

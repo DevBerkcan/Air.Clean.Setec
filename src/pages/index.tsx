@@ -57,7 +57,7 @@ export default function Index() {
               "url": "https://www.airclean-setec.de",
               "logo": "https://www.airclean-setec.de/favicon.png",
               "image": "https://www.airclean-setec.de/og-image.jpg",
-              "telephone": "+4915122851195",
+              "telephone": "+4969247547300",
               "email": "info@airclean-setec.de",
               "address": {
                 "@type": "PostalAddress",
